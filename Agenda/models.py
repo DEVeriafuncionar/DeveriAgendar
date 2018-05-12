@@ -3,14 +3,13 @@ from django.db import models
 
 
 # Create your models here.
-# Aumentar campo de texto dos nomes.
 
 
 class Pessoa(models.Model):
-    Usuario = models.ForeignKey(User, blank=True, related_name="Usuario", on_delete=models.CASCADE)
+    Usuario = models.ForeignKey(User, related_name="Usuario", on_delete=models.CASCADE)
     Nome = models.CharField(max_length=60, null=False)
     email = models.EmailField(max_length=45, null=False)
-    bio = models.TextField()
+    bio = models.TextField(blank=True)
     telefone = models.CharField(max_length=12, null=True, blank=True)
 
     foto_de_Perfil = models.ImageField(upload_to='perfil', null=True, blank=True)
@@ -24,12 +23,13 @@ class Instituicao(Pessoa):
     tipo = 'Instituição'
     endereco = models.CharField(max_length=255, null=True, blank=True)
 
-    def __str__(self):
-        return self.tipo
 
 
 
 # Teste de Prioridade por favor de preferencia não apagar está parte ate o final do desenvolvimento do codigo.
+#-----------------------------------------------------------------------------------------------------------------#
+
+
 # class Agenda(models.Model):
 #     foto_de_capa = models.ImageField(upload_to='capa', null=True, blank=True)
 #     nome = models.CharField(max_length=35, null=False)
@@ -69,16 +69,16 @@ class Instituicao(Pessoa):
 #         return self.tipo
 
 class Compromisso(models.Model):
-    nome = models.CharField(max_length=60, null=False)
-    discricao = models.TextField()
+    titulo = models.CharField(max_length=60, null=False)
+    discricao = models.TextField(blank=True)
     local = models.CharField(max_length=100, null=True, blank=True)
-    dataInicio = models.DateTimeField(null=True, verbose_name='Data e Hora de Inicio')
-    dataFim = models.DateTimeField(null=True, verbose_name='Data e Hora do terminio')
+    dataInicio = models.DateTimeField(null=True, verbose_name='Data e Hora de Inicio', blank = True)
+    dataFim = models.DateTimeField(null=True, verbose_name='Data e Hora do terminio', blank=True)
 
     foto = models.ImageField(upload_to='compromissoFoto', null=True, blank=True)
 
     def __str__(self):
-        return self.nome
+        return self.titulo
 
 
 class CompromissoPessoal(Compromisso):
@@ -94,8 +94,11 @@ class CompromissoPessoal(Compromisso):
 
 
 class Tarefas(models.Model):
-    nometarefa = models.CharField(max_length=20, null=False)
+    nometarefa = models.CharField(max_length=20, null=False,verbose_name="tarefa")
 
+
+    def __str__(self):
+        return self.nometarefa
 
 class CompromissoInstitucional(Compromisso):
     compromisso = models.ForeignKey(Tarefas, max_length=20, on_delete=models.CASCADE)
@@ -104,7 +107,7 @@ class CompromissoInstitucional(Compromisso):
 class Agenda(models.Model):
     foto_de_capa = models.ImageField(upload_to='capa', null=True, blank=True)
     nome = models.CharField(max_length=35, null=False)
-    discricao = models.TextField()
+    discricao = models.TextField(blank=True)
 
     def __str__(self):
         return self.nome
@@ -115,23 +118,20 @@ class AgendaPrivada(Agenda):
 
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
 
-    compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True)
+    compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True, verbose_name='Compromissos')
 
-    def __str__(self):
-        return self.tipo
+
 
 
 class AgendaInstitucional(Agenda):
     tipo = "Agenda Institucional"
 
-    instituicao = models.ForeignKey(Instituicao, on_delete=models.CASCADE)
+    instituicao = models.ForeignKey(Instituicao, on_delete=models.CASCADE, verbose_name='Instituição')
 
     seguem = models.ManyToManyField(User, blank=True)
 
-    compromissoInstitucional = models.ManyToManyField(CompromissoInstitucional, blank=True)
+    compromissoInstitucional = models.ManyToManyField(CompromissoInstitucional, blank=True, verbose_name='Compromisso Institucional')
 
-    def __str__(self):
-        return self.tipo
 
 
 class AgendaPublica(Agenda):
@@ -139,10 +139,9 @@ class AgendaPublica(Agenda):
     dono = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
     seguem = models.ManyToManyField(User, blank=True)
 
-    compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True)
+    compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True,verbose_name='Compromissos')
 
-    def __str__(self):
-        return self.tipo
+
 
 
 #Cada Caminho das imagens segue para uma pasta especifica
