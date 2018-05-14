@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+import datetime
+
 
 # Create your models here.
 
@@ -72,8 +74,9 @@ class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)
     discricao = models.TextField(blank=True)
     local = models.CharField(max_length=100, null=True, blank=True)
-    dataInicio = models.DateTimeField(null=True, verbose_name='Data e Hora de Inicio', blank = True)
+    dataInicio = models.DateTimeField(default= datetime.datetime.now(),null=True, verbose_name='Data e Hora de Inicio', blank = True) #date time puxando como default o dia e hora atual;
     dataFim = models.DateTimeField(null=True, verbose_name='Data e Hora do terminio', blank=True)
+    dataCriacao = datetime.datetime.now() #armazena a data em que este Compromisso foi criado
 
     foto = models.ImageField(upload_to='compromissoFoto', null=True, blank=True)
 
@@ -90,11 +93,12 @@ class CompromissoPessoal(Compromisso):
         ("outro", "Outro")
     )
 
-    compromisso = models.CharField(max_length=20, null=False, choices=COMPROMISSO_CHOICES)
+    compromisso = models.CharField(max_length=20, null=False, choices=COMPROMISSO_CHOICES,help_text='Tipos de eventos que podem vir a ser criado nesta versão da agenda')
 
 
 class Tarefas(models.Model):
     nometarefa = models.CharField(max_length=20, null=False,verbose_name="tarefa")
+    dataCriacao = datetime.datetime.now()
 
 
     def __str__(self):
@@ -108,6 +112,7 @@ class Agenda(models.Model):
     foto_de_capa = models.ImageField(upload_to='capa', null=True, blank=True)
     nome = models.CharField(max_length=35, null=False)
     discricao = models.TextField(blank=True)
+    dataCriacao = datetime.datetime.now()
 
     def __str__(self):
         return self.nome
