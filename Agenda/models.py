@@ -1,6 +1,5 @@
 from django.contrib.auth.models import User
 from django.db import models
-
 import datetime
 
 
@@ -74,7 +73,7 @@ class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)
     discricao = models.TextField(blank=True)
     local = models.CharField(max_length=100, null=True, blank=True)
-    dataInicio = models.DateTimeField(default= datetime.datetime.now(),null=True, verbose_name='Data e Hora de Inicio', blank = True) #date time puxando como default o dia e hora atual;
+    dataInicio = models.DateTimeField(null=True, verbose_name='Data e Hora de Inicio', blank = True) #date time puxando como default o dia e hora atual;
     dataFim = models.DateTimeField(null=True, verbose_name='Data e Hora do terminio', blank=True)
     dataCriacao = datetime.datetime.now() #armazena a data em que este Compromisso foi criado
 
