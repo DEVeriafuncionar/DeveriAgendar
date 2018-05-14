@@ -24,9 +24,6 @@ class Instituicao(Pessoa):
     tipo = 'Instituição'
     endereco = models.CharField(max_length=255, null=True, blank=True)
 
-
-
-
 # Teste de Prioridade por favor de preferencia não apagar está parte ate o final do desenvolvimento do codigo.
 #-----------------------------------------------------------------------------------------------------------------#
 
