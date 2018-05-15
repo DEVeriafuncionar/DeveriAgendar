@@ -30,9 +30,8 @@ from .models import *
 #         return redirect('pessoa_list')
 #     return render(request, 'pessoa_form.html',{'form':form})
 
-
 def lista_pessoa(request): #metado de teste pego do SGE
-    lista_tipos = Pessoa.objects.all()
+    lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos':lista_tipos})
 
 def create_pessoa(request): #metado de teste pego do SGE
@@ -48,12 +47,13 @@ def salvar_pessoa(request): #metado de teste pego do SGE
         usuario = User()
         usuario.username = login
         usuario.password = senha
-
+        usuario.save()
         nome = request.POST.get('nome')
         email = request.POST.get('email')
         if nome and email:
-            usuario.save()
+
             p = Pessoa()
+            p.nome = nome
             p.nome = nome
             print("print Nome",p.nome)
             p.email = email

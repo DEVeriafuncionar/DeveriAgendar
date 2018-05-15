@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Agenda/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Agenda/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Agenda/templates/instituicao_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/setub.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/setub.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0005_auto_20180512_2000.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/migrations/0005_auto_20180512_2000.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0002_auto_20180512_1921.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0003_auto_20180512_1956.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0004_auto_20180512_1958.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0005_auto_20180512_2000.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0006_auto_20180512_2002.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0007_auto_20180514_1745.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0008_compromisso_hora.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0009_remove_compromisso_hora.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeveriaAgendar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeveriaAgendar/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeveriaAgendar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeveriaAgendar/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,72 +35,27 @@
     <splitter split-orientation="horizontal" split-proportion="0.6550681">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Agenda/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+                <state relative-caret-position="65">
+                  <caret line="41" selection-start-line="41" selection-end-line="62" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
-                    <element signature="e#68#93#0" />
+                    <element signature="e#69#94#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Agenda/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-952">
-                  <caret column="15" selection-start-column="15" selection-end-column="15" />
+                <state relative-caret-position="119">
+                  <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
                   <folding>
-                    <element signature="e#716#826#0" />
+                    <element signature="e#0#15#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Agenda/templates/base.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tipo_add.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="24" selection-start-column="24" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tipo.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="24" selection-start-column="24" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pessoa_form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1139">
-                  <caret line="67" column="56" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="56" />
                 </state>
               </provider>
             </entry>
@@ -109,12 +63,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+                <state relative-caret-position="272">
+                  <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
                   <folding>
                     <element signature="e#638#670#0" expanded="true" />
                   </folding>
@@ -126,25 +80,30 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Pessoa</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Agenda/admin.py" />
         <option value="$PROJECT_DIR$/DeveriAgendar/urls.py" />
         <option value="$PROJECT_DIR$/DeveriAgendar/settings.py" />
         <option value="$PROJECT_DIR$/DeveriaAgendar/settings.py" />
         <option value="$PROJECT_DIR$/Agenda/templates/instituicao_form.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/index.html" />
-        <option value="$PROJECT_DIR$/Agenda/views.py" />
         <option value="$PROJECT_DIR$/Agenda/templates/base.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/tipo_add.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" />
         <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
+        <option value="$PROJECT_DIR$/Agenda/admin.py" />
         <option value="$PROJECT_DIR$/Agenda/models.py" />
+        <option value="$PROJECT_DIR$/Agenda/views.py" />
       </list>
     </option>
   </component>
@@ -166,6 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,16 +155,10 @@
               <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
               <item name="DeveriaAgendar" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,53 +245,68 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" weight="0.28547856" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2193646" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.28547856" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22239032" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2193646" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" weight="0.28547856" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
       <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2193646" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.29968455" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Data View" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32838285" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2193646" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848714" visible="true" weight="0.28547856" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39905363" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,43 +332,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="e#638#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding>
-            <element signature="e#716#826#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
         </state>
@@ -410,7 +342,7 @@
         <state relative-caret-position="272">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#716#826#0" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -454,7 +386,148 @@
         <state relative-caret-position="85">
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
           <folding>
-            <element signature="e#716#826#0" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/migrations/0002_auto_20180512_1921.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1667" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/migrations/0006_auto_20180512_2002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/instituicao_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="56" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py" />
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#69#94#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,6 +538,77 @@
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -537,49 +681,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models.py" />
     <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#68#93#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        <state relative-caret-position="272">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="119">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#716#826#0" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="41" selection-start-line="41" selection-end-line="62" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#69#94#0" />
           </folding>
         </state>
       </provider>
