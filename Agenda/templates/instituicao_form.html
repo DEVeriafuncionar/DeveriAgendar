@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    Cadastrar Instituição
+{% endblock title %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">
+            salvar
+        </button>
+    </form>
+
+
+{% endblock content %}

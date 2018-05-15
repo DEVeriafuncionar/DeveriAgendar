@@ -1,0 +1,13 @@
+{#templete pego do SGE#}
+{% extends 'base.html' %}
+
+{% block conteudo %}
+  <h1>Lista de pessoa</h1>
+  <ul>
+  {% for tipo in tipos %}
+      <li>{{ tipo.nome }}</li>
+  {% endfor %}
+  </ul>
+  <a class="btn btn-primary" role='button' href='/pessoa/add'>Novo</a>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{#templete pego do SGE#}
+{% extends 'base.html' %}
+
+{% block conteudo %}
+  <h1>Criar Tipo</h1>
+  <form action="/pessoa/salvar" method="post">
+    {% csrf_token %}
+    <label>Nome tipo:</label>
+    <input name='nome_tipo' type="text" ></input>
+    <br /><br />
+    <button type="submit" class="btn btn-success" role='button'>Salvar</button>
+  </form>
+  
+{% endblock %}

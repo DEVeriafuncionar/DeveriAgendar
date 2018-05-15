@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
             name='Pessoa',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('Nome', models.CharField(max_length=60)),
+                ('nome', models.CharField(max_length=60)),
                 ('email', models.EmailField(max_length=45)),
                 ('bio', models.TextField()),
                 ('telefone', models.CharField(max_length=12, null=True)),
@@ -100,8 +100,8 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='pessoa',
-            name='Usuario',
-            field=models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, related_name='Usuario', to=settings.AUTH_USER_MODEL),
+            name='usuario',
+            field=models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, related_name='usuario', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
             model_name='agendapublica',

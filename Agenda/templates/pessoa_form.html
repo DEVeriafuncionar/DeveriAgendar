@@ -1,0 +1,71 @@
+{#templete pego do SGE#}
+{#Formulario gerado em um site http://www.phpform.org #}
+{% extends 'base.html' %}
+{% block title %}
+    Cadastrar pessoa
+{% endblock title %}
+
+{% block conteudo %}
+
+    <form action='/pessoa/salvar' method="post">
+        {% csrf_token %}
+        <div class="form_description">
+            <h2>Untitled Form</h2>
+            <p>This is your form description. Click here to edit.</p>
+        </div>
+        <ul>
+
+            <li>
+                <label class="description" for="login">Login </label>
+                <div>
+                    <input id="login" name="login" class="element text medium" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_2">
+                <label class="description" for="senha">Senha </label>
+                <div>
+                    <input type="password" id="senha" name="senha" class="element text medium" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_3">
+                <label class="description" for="nome">Nome </label>
+                <div>
+                    <input id="nome" name="nome" class="element text medium" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_4">
+                <label class="description" for="email">Email </label>
+                <div>
+                    <input id="email" name="email" class="element text medium" type="email" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_5">
+                <label class="description" for="bio">Bio </label>
+                <div>
+                    <textarea id="bio" name="bio" class="element textarea medium"></textarea>
+                </div>
+            </li>
+            <li id="li_6">
+                <label class="description" for="telefone">Telefone </label>
+                <div>
+                    <input id="telefone" name="telefone" class="element text medium" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_7">
+                <label class="description" for="element_7">Upload a File </label>
+                <div>
+                    <input id="element_7" name="element_7" class="element file" type="file"/>
+                </div>
+            </li>
+
+            <button type="submit" class="btn btn-success" role='button'>Salvar</button>
+        </ul>
+    </form>
+
+
+{% endblock conteudo %}
