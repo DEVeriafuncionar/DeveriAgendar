@@ -4,7 +4,7 @@ from .models import *
 
 admin.site.register(Pessoa)
 admin.site.register(Instituicao)
-#admin.site.register(Agenda)
+admin.site.register(Usuario)
 admin.site.register(AgendaInstitucional)
 admin.site.register(AgendaPrivada)
 admin.site.register(AgendaPublica)

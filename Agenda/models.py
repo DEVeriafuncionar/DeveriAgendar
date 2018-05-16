@@ -1,4 +1,5 @@
 import datetime
+
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -8,7 +9,7 @@ from django.db import models
 # permite que deixe um dos campos em branco, mesmo utilizando o (blank = True).
 
 class Usuario(models.Model):
-    usuario = models.ForeignKey(User, related_name="Usuario", on_delete=models.CASCADE)
+    usuario = models.OneToOneField(User, related_name="usuario", on_delete=models.CASCADE)
     nome = models.CharField(max_length=60, null=False)
     email = models.EmailField(max_length=45, null=False)
     bio = models.TextField(blank=True)
@@ -20,25 +21,32 @@ class Usuario(models.Model):
         return self.nome
 
 
-class Instituicao(Usuario):
-    tipo = 'Instituição'
+class Instituicao(models.Model):
+    instituicao = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='instituicao')
     endereco = models.CharField(max_length=255, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Instituições"
 
-class Pessoa(Usuario):
-    tipo='Pessoa'
+    def __str__(self):
+        return self.instituicao.nome
+
+class Pessoa(models.Model):
+    pessoa = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='pessoa')
     dataNascimento = models.DateField(null=True, verbose_name='Data de Nascimento', blank=True)
 
     class Meta:
         verbose_name_plural = "Pessoas"
 
+    def __str__(self):
+        return self.pessoa.nome
+
+
 class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)
     discricao = models.TextField(blank=True)
     local = models.CharField(max_length=100, null=True, blank=True)
-    dataInicio = models.DateField(null=True, verbose_name='Data de Inicio',blank=True)
+    dataInicio = models.DateField(null=True, verbose_name='Data de Inicio', blank=True)
     horaInicio = models.TimeField(null=True, verbose_name='Hora de Inicio', blank=True)
     dataFim = models.DateField(null=True, verbose_name='Data de Termino', blank=True)
     horaFim = models.TimeField(null=True, verbose_name='Hora de Termino', blank=True)
@@ -51,6 +59,7 @@ class Compromisso(models.Model):
     def __str__(self):
         return self.titulo
 
+
 class CompromissoPessoal(Compromisso):
     COMPROMISSO_CHOICES = (
         ("aniversario", "Aniversário"),
@@ -60,10 +69,12 @@ class CompromissoPessoal(Compromisso):
         ("outro", "Outro")
     )
 
-    compromisso = models.CharField(max_length=20, null=False, choices=COMPROMISSO_CHOICES, help_text='Tipos de eventos que podem vir a ser criado nesta versão da agenda')
+    compromisso = models.CharField(max_length=20, null=False, choices=COMPROMISSO_CHOICES,
+                                   help_text='Tipos de eventos que podem vir a ser criado nesta versão da agenda')
 
     class Meta:
         verbose_name_plural = "Compromissos Pessoais"
+
 
 class Tarefas(models.Model):
     nometarefa = models.CharField(max_length=20, null=False, verbose_name="tarefa")
@@ -82,6 +93,7 @@ class CompromissoInstitucional(Compromisso):
     class Meta:
         verbose_name_plural = "Compromisso Institucional"
 
+
 class Agenda(models.Model):
     foto_de_capa = models.ImageField(upload_to='capa', null=True, blank=True)
     nome = models.CharField(max_length=35, null=False)
@@ -93,17 +105,14 @@ class Agenda(models.Model):
 
 
 class AgendaPrivada(Agenda):
-    tipo = "Agenda Privada"
-
-    pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
-
+    pessoa = models.ForeignKey(User, on_delete=models.CASCADE)
     compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True, verbose_name='Compromissos')
 
     class Meta:
         verbose_name_plural = "Agenda Privada"
 
+
 class AgendaInstitucional(Agenda):
-    tipo = "Agenda Institucional"
     instituicao = models.ForeignKey(Instituicao, on_delete=models.CASCADE, verbose_name='Instituição')
     seguem = models.ManyToManyField(User, blank=True)
     compromissoInstitucional = models.ManyToManyField(CompromissoInstitucional, blank=True,verbose_name='Compromisso Institucional')
@@ -111,12 +120,13 @@ class AgendaInstitucional(Agenda):
     class Meta:
         verbose_name_plural = "Agenda Institucional"
 
+
 class AgendaPublica(Agenda):
-    tipo = "Agenda Publica"
-    dono = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    seguem = models.ManyToManyField(User, blank=True)
+    dono = models.ForeignKey(User, on_delete=models.CASCADE,related_name="dono")
+    seguem = models.ManyToManyField(User, blank=True, related_name='seguem')
     compromissoPessoal = models.ManyToManyField(CompromissoPessoal, blank=True, verbose_name='Compromissos')
 
     class Meta:
         verbose_name_plural = "Agenda Publica"
-# Cada Caminho das imagens segue para uma pasta especifica
+
+#Cada Caminho das imagens segue para uma pasta especifica

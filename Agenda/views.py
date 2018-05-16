@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
+
 from .models import *
+
 
 # Create your views here.
 
@@ -30,34 +32,44 @@ from .models import *
 #         return redirect('pessoa_list')
 #     return render(request, 'pessoa_form.html',{'form':form})
 
-def lista_pessoa(request): #metado de teste pego do SGE
+def lista_pessoa(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
-    return render(request, 'tipo.html', context={'tipos':lista_tipos})
+    return render(request, 'tipo.html', context={'tipos': lista_tipos})
 
-def create_pessoa(request): #metado de teste pego do SGE
+
+def create_pessoa(request):  # metado de teste pego do SGE
     return render(request, 'pessoa_form.html', context=None)
 
-#esse metado cria o usuario apartir de um formulario completo, ele não está completo e está apresentando erro.
-#a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
-def salvar_pessoa(request): #metado de teste pego do SGE
+
+# esse metado cria o usuario apartir de um formulario completo, ele não está completo e está apresentando erro.
+# a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
+# transaction.atomic
+def salvar_pessoa(request):  # metado de teste pego do SGE
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
     if login and senha:
-        usuario = User()
-        usuario.username = login
-        usuario.password = senha
-        usuario.save()
+        user = User()
+        user.username = login
+        user.password = senha
+        user.save()
+
+        usuario2 = Usuario()
+        usuario2.usuario = user
+        usuario2.save()
         nome = request.POST.get('nome')
         email = request.POST.get('email')
-        if nome and email:
+        usuario2.nome=nome
+        usuario2.email = email
+        usuario2.save()
+        # if nome and email:
+        #     p = Pessoa()
+        #     p.pessoa = usuario2
+        #     p.nome = nome
+        #     p.email = email
+        #     p.save()
+        #     print("print Nome", p.nome)
+        #     print("Print Email", p.email)
 
-            p = Pessoa()
-            p.nome = nome
-            p.nome = nome
-            print("print Nome",p.nome)
-            p.email = email
-            print("Print Email",p.email)
-            p.save()
 
     return redirect('/pessoa')
