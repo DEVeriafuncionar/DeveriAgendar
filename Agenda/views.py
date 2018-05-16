@@ -43,8 +43,9 @@ def create_pessoa(request):  # metado de teste pego do SGE
 
 # esse metado cria o usuario apartir de um formulario completo, ele não está completo e está apresentando erro.
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
-# transaction.atomic
-def salvar_pessoa(request):  # metado de teste pego do SGE
+# metados de teste pego do SGE.
+# @transaction.atomic
+def salvar_pessoa(request): #primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
@@ -52,21 +53,25 @@ def salvar_pessoa(request):  # metado de teste pego do SGE
         user = User()
         user.username = login
         user.password = senha
-        user.save()
+        user.save() # aqui voce cria o usuario
+
+        usuario2 = Usuario() #Aqui voce instancia a class usuario
+        usuario2.usuario = user # class Usuario recebe a class User do django
+        usuario2.save() # salva a class Usuario
         nome = request.POST.get('nome')
         email = request.POST.get('email')
+
         if nome and email:
-            p=Pessoa()
-            p.usuario = user
-            p.nome = nome
-            p.email = email
+            p = Pessoa() # Inicia a class Pessoa
+            usuario2.nome = nome #Como atributo de nome estão na class Usuario quem recebe os atributos de nome e email e ela quem recebe
+            usuario2.email = email
+            usuario2.save() # aqui voce cria a class
+            p.pessoa = usuario2
             p.save()
-
-
 
     return redirect('/pessoa')
 
-# def salvar_pessoa(request): Jeito de salvar da segunda forma
+#def salvar_pessoa(request):  # Utilizando segunda forma utilizando Herança
 #
 #     login = request.POST.get('login')
 #     senha = request.POST.get('senha')
@@ -75,17 +80,13 @@ def salvar_pessoa(request):  # metado de teste pego do SGE
 #         user.username = login
 #         user.password = senha
 #         user.save()
-#
-#         usuario2 = Usuario()
-#         usuario2.usuario = user
-#         usuario2.save()
 #         nome = request.POST.get('nome')
 #         email = request.POST.get('email')
-#
 #         if nome and email:
-#             usuario2.nome = nome
-#             usuario2.email = email
-#             usuario2.save()
-#             print("print Nome", p.nome)
-#             print("Print Email", p.email)
+#             p=Pessoa()
+#             p.usuario = user
+#             p.nome = nome
+#             p.email = email
+#             p.save()
 #
+#     return redirect('/pessoa')

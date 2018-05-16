@@ -34,13 +34,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Agenda/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+            <state relative-caret-position="612">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#71#96#0" />
+                <element signature="e#2609#2659#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1135#1207#0" />
+                <element signature="e#1765#1833#0" />
               </folding>
             </state>
           </provider>
@@ -79,8 +95,8 @@
         <option value="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" />
         <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
         <option value="$PROJECT_DIR$/Agenda/admin.py" />
-        <option value="$PROJECT_DIR$/Agenda/models.py" />
         <option value="$PROJECT_DIR$/Agenda/views.py" />
+        <option value="$PROJECT_DIR$/Agenda/models.py" />
       </list>
     </option>
   </component>
@@ -228,12 +244,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526501742183</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira">
+      <created>1526502750633</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526502750633</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -242,8 +264,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.22239032" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22239032" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -300,7 +322,8 @@
     <MESSAGE value="Models Alterado" />
     <MESSAGE value="Models Corrigidos e alterados" />
     <MESSAGE value="View teste 1 funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="View teste 1 funcionando" />
+    <MESSAGE value="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira" />
+    <option name="LAST_COMMIT_MESSAGE" value="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -342,8 +365,8 @@
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
@@ -435,6 +458,8 @@
           <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#71#96#0" />
+            <element signature="e#2609#2659#0" />
           </folding>
         </state>
       </provider>
@@ -452,8 +477,8 @@
           <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
@@ -488,8 +513,8 @@
           <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
@@ -507,8 +532,8 @@
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
@@ -547,8 +572,8 @@
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
@@ -640,24 +665,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="612">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#974#1033#0" />
-            <element signature="e#1576#1629#0" />
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#71#96#0" />
+            <element signature="e#2609#2659#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        <state relative-caret-position="374">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1135#1207#0" />
+            <element signature="e#1765#1833#0" />
           </folding>
         </state>
       </provider>
