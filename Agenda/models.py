@@ -20,27 +20,43 @@ class Usuario(models.Model):
     def __str__(self):
         return self.nome
 
-
-class Instituicao(models.Model):
-    instituicao = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='instituicao')
+class Instituicao(Usuario):
     endereco = models.CharField(max_length=255, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Instituições"
 
     def __str__(self):
-        return self.instituicao.nome
+        return self.nome
 
-class Pessoa(models.Model):
-    pessoa = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='pessoa')
+# class Instituicao(models.Model): # Segundo jeito de fazer
+#     instituicao = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='instituicao')
+#     endereco = models.CharField(max_length=255, null=True, blank=True)
+#
+#     class Meta:
+#         verbose_name_plural = "Instituições"
+#
+#     def __str__(self):
+#         return self.instituicao.nome
+
+class Pessoa(Usuario):
     dataNascimento = models.DateField(null=True, verbose_name='Data de Nascimento', blank=True)
 
     class Meta:
         verbose_name_plural = "Pessoas"
 
     def __str__(self):
-        return self.pessoa.nome
+        return self.nome
 
+# class Pessoa(models.Model): segundo jeito de fazer
+#     pessoa = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='pessoa')
+#     dataNascimento = models.DateField(null=True, verbose_name='Data de Nascimento', blank=True)
+#
+#     class Meta:
+#         verbose_name_plural = "Pessoas"
+#
+#     def __str__(self):
+#         return self.pessoa.nome
 
 class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)

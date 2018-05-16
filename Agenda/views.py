@@ -53,23 +53,39 @@ def salvar_pessoa(request):  # metado de teste pego do SGE
         user.username = login
         user.password = senha
         user.save()
-
-        usuario2 = Usuario()
-        usuario2.usuario = user
-        usuario2.save()
         nome = request.POST.get('nome')
         email = request.POST.get('email')
-        usuario2.nome=nome
-        usuario2.email = email
-        usuario2.save()
-        # if nome and email:
-        #     p = Pessoa()
-        #     p.pessoa = usuario2
-        #     p.nome = nome
-        #     p.email = email
-        #     p.save()
-        #     print("print Nome", p.nome)
-        #     print("Print Email", p.email)
+        if nome and email:
+            p=Pessoa()
+            p.usuario = user
+            p.nome = nome
+            p.email = email
+            p.save()
+
 
 
     return redirect('/pessoa')
+
+# def salvar_pessoa(request): Jeito de salvar da segunda forma
+#
+#     login = request.POST.get('login')
+#     senha = request.POST.get('senha')
+#     if login and senha:
+#         user = User()
+#         user.username = login
+#         user.password = senha
+#         user.save()
+#
+#         usuario2 = Usuario()
+#         usuario2.usuario = user
+#         usuario2.save()
+#         nome = request.POST.get('nome')
+#         email = request.POST.get('email')
+#
+#         if nome and email:
+#             usuario2.nome = nome
+#             usuario2.email = email
+#             usuario2.save()
+#             print("print Nome", p.nome)
+#             print("Print Email", p.email)
+#
