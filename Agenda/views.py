@@ -90,3 +90,5 @@ def salvar_pessoa(request): #primeira forma utilizando chave estrangeira
 #             p.save()
 #
 #     return redirect('/pessoa')
+ def create_agenda(request):
+        return render(request,"template da agenda",context = None)
