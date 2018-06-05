@@ -45,7 +45,8 @@ def create_pessoa(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
-def salvar_pessoa(request): #primeira forma utilizando chave estrangeira
+def salvar_pessoa(request):
+#primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
@@ -69,26 +70,5 @@ def salvar_pessoa(request): #primeira forma utilizando chave estrangeira
             p.pessoa = usuario2
             p.save()
 
-    return redirect('/pessoa')
+    return redirect('/index/')
 
-#def salvar_pessoa(request):  # Utilizando segunda forma utilizando Herança
-#
-#     login = request.POST.get('login')
-#     senha = request.POST.get('senha')
-#     if login and senha:
-#         user = User()
-#         user.username = login
-#         user.password = senha
-#         user.save()
-#         nome = request.POST.get('nome')
-#         email = request.POST.get('email')
-#         if nome and email:
-#             p=Pessoa()
-#             p.usuario = user
-#             p.nome = nome
-#             p.email = email
-#             p.save()
-#
-#     return redirect('/pessoa')
- def create_agenda(request):
-        return render(request,"template da agenda",context = None)

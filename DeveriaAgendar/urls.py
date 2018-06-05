@@ -20,10 +20,10 @@ from django.urls import path
 
 from Agenda.views import *  # Cadastrar_Instituicao,Cadastrar_Pessoa
 
-# assim como as views esses path são para teste de criação pessoa.
+# assim como as views esses path sï¿½o para teste de criaï¿½ï¿½o pessoa.
 urlpatterns = [
                   path('admin/', admin.site.urls),
-                  path('pessoa/', lista_pessoa, name='home_tipos'),
+                  path('index/', lista_pessoa, name='index'),
                   path('pessoa/add', create_pessoa, name='create_pessoa'),
                   path('pessoa/salvar', salvar_pessoa, name='salvar_pessoa'),
                   # path('usuario/',lista_usuario,name='lista_usuario'),
