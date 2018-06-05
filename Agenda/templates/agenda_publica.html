@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Lista de Agendas Publicas
+{% endblock title %}
+
+{% block conteudo %}
+    <h1>Lista de agendas</h1>
+        <ul>
+            {% for nomeAgenda in nome  %}
+                <li>{{nomeAgenda.nome}}</li>
+            {% endfor %}
+        </ul>
+{% endblock  %}

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
 from .models import *
+from .forms import *
 
 
 # Create your views here.
@@ -90,5 +91,24 @@ def salvar_pessoa(request): #primeira forma utilizando chave estrangeira
 #             p.save()
 #
 #     return redirect('/pessoa')
- def create_agenda(request):
-        return render(request,"template da agenda",context = None)
+#
+def show_calendar(request):
+    evento = CompromissoPessoal.objects.all()
+    return render(request,'calendar.html',context={ 'evento':evento })
+
+def agendas_publicas(request):
+    lista_agendas= AgendaPublica.objects.all()
+    return render(request,'agenda_publica.html', context = {'nome': lista_agendas} )
+# @login_required
+def agendas_privadas(request):
+    agendas = AgendaPrivada.objects.all()
+
+    return render(request,'agenda_privada.html',context={'agenda_privada':agendas})
+
+def create_compromissoPessoal(request):
+    form = CompromissoPessoalForm
+
+    if form.is_valid():
+        form.save()
+
+    return render(request,'calendar.html',context = {'form':form})

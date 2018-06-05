@@ -269,7 +269,7 @@ fc.lang = function(langCode, newFcOptions) {
 	});
 
 	// set it as the default language for FullCalendar
-	defaults.lang = langCode;
+	defaults.lang = langCode
 };
 
 
@@ -343,7 +343,7 @@ var momComputableOptions = {
 function getMomentLocaleData(langCode) {
 	var func = moment.localeData || moment.langData;
 	return func.call(moment, langCode) ||
-		func.call(moment, 'en'); // the newer localData could return null, so fall back to en
+		func.call(moment, 'pt-br'); // the newer localData could return null, so fall back to en
 }
 
 

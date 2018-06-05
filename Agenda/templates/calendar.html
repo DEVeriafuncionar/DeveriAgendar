@@ -90,10 +90,19 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <form action="/createevent/" method="POST">
-                                                        <label>Titulo</label>
-                                                        <input type="text" placeholder="Titulo"/><br>
-                                                        <label>Descrição</label>
-                                                        <input type="text" placeholder="~Descrição"/>
+                                                        <label><strong>Titulo</strong></label><br>
+                                                            {{ form.titulo }}<br>
+                                                        <label><strong>Descrição:</strong></label><br>
+                                                            {{ form.discricao }}<br>
+                                                        <label><strong>Local:</strong></label><br>
+                                                            {{ form.local }}<br>
+                                                        <label><strong>Data Inicio:</strong></label><br>
+                                                            {{ form.dataInicio }}<br>
+                                                        <label><strong>Data Fim:</strong></label><br>
+                                                        <input type="date"/><br>
+
+
+
 
                                                     </form>
                                                 </div>
