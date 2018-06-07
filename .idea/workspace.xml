@@ -2,7 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/css/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fastclick/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fastclick/fastclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fullcalendar/fullcalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/fullcalendar/fullcalendar.print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/slimScroll/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/static/plugins/slimScroll/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/templates/agenda_privada.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/templates/agenda_publica.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/templates/calendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Agenda/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requiriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requiriments.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,24 +81,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Agenda/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+            <state relative-caret-position="847">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#71#96#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requiriments.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="requiriments.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requiriments.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2278">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -56,7 +114,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Agenda/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="323">
               <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -69,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -131,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,7 +233,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,12 +243,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,11 +347,19 @@
       <option name="project" value="LOCAL" />
       <updated>1528152301759</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Veiws utilizando chave estranjeira e a forma mais correta de utilizar.">
+      <created>1528410246593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528410246593</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
@@ -301,8 +367,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22844176" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2322239" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -310,11 +376,11 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Data View" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -322,27 +388,27 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
-      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info anchor="right" id="Data View" order="0" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22239032" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +428,8 @@
     <MESSAGE value="View teste 1 funcionando" />
     <MESSAGE value="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira" />
     <MESSAGE value="Veiws utilizando chave estranjeira e a forma mais correta de utilizar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Veiws utilizando chave estranjeira e a forma mais correta de utilizar." />
+    <MESSAGE value="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -370,6 +437,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -485,7 +562,6 @@
           <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#71#96#0" />
           </folding>
         </state>
       </provider>
@@ -607,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -673,7 +742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="323">
           <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -684,28 +753,31 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requiriments.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="847">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#71#96#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2278">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requiriments.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

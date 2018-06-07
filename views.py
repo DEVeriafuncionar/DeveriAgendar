@@ -106,9 +106,32 @@ def agendas_privadas(request):
     return render(request,'agenda_privada.html',context={'agenda_privada':agendas})
 
 def create_compromissoPessoal(request):
-    form = CompromissoPessoalForm
+    titulo = request.POST.get( ' tituloEvent ' )
+    descricao = request.POST.get( ' descricaoEvent ' )
+    local = request.POST.get( ' localEvent ' )
+    dt_inicio = request.POST.get( ' dtBeginEvent ' )
+    hr_inicio = request.POST.get( ' hourBeginEvent ' )
+    dt_fim = request.POST.get( ' dtEndEvent ' )
+    hr_fim = request.POST.get( ' hourEndEvent ' )
+    foto = request.POST.get( ' InputFile ' )
 
-    if form.is_valid():
-        form.save()
 
-    return render(request,'calendar.html',context = {'form':form})
+
+    if titulo and descricao and local and dt_inicio and hr_inicio and dt_fim and hr_fim and foto:
+
+        evento = CompromissoPessoal()
+
+        evento.titulo = titulo
+        evento.discricao = descricao
+        evento.local = local
+        evento.dataInicio = dt_inicio
+        evento.horaInicio = hr_inicio
+        evento.dataFim = dt_fim
+        evento.horaFim = hr_fim
+        evento.foto = foto
+
+        evento.save()
+
+        return render(request,'calendar.html')
+    else:
+        return redirect('/createEventoPessoal/')
