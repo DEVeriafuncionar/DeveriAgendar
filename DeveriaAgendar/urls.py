@@ -24,7 +24,7 @@ urlpatterns = [
                   # path('login/', login, name="login"),
                   # path('cadastro/', cadastrar, name="cadastrar"),
                   # path('admin/', admin.site.urls),
-                  # path('', index, name='index'),
+                  path('', index, name='index'),
                   # path('agendas/calendario/', show_calendar),
 
                   path('contas/', lista_contas, name='home_tipos'),
