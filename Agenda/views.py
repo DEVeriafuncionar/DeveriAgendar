@@ -5,12 +5,13 @@ from .forms import *
 from .models import *
 from .forms import *
 
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import *
+from .models import *
+
 <<<<<<< HEAD
-
-# Create your views here.
-
-# Desse jeito sera os outros forms. Os de Criar usuario não será desse jeito por outros motivos que depois qualquer duvida explico.
-
 # class InstituicaoForm(ModelForm):
 #     class Meta:
 #         model = Instituicao
@@ -46,10 +47,11 @@ def login(request):  #
 def cadastrar(request):  #
     return render(request, 'cadastro.html')
 =======
+=======
+>>>>>>> 55d0b819e5d4220955cf1839d009e9535adab752
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
->>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
 
 
 def create_conta(request):  # metado de teste pego do SGE
@@ -60,12 +62,8 @@ def create_conta(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
-<<<<<<< HEAD
-def salvar_pessoa(request):
-#primeira forma utilizando chave estrangeira
-=======
+
 def salvar_conta(request):  # primeira forma utilizando chave estrangeira
->>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
@@ -100,10 +98,6 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
                 messages.info(request, 'Email errados')
                 return HttpResponseRedirect('/criarconta')
 
-<<<<<<< HEAD
-    return redirect('/index/')
-
-=======
     return redirect('/contas')
 
 # def salvar_conta(request):  # Utilizando segunda forma utilizando Herança
@@ -153,9 +147,7 @@ def create_compromissoPessoal(request):
     hr_fim = request.POST.get(' hourEndEvent ')
     foto = request.POST.get(' InputFile ')
 
-    evento = CompromissoPessoal.objects.all()
-    form = CompromissoPessoalForm(request.POST or None)
-
+    evento = CompromissoPessoal()
     if titulo:
         evento.titulo = titulo
 
@@ -182,9 +174,35 @@ def create_compromissoPessoal(request):
 
         evento.save()
 
-        return render(request, 'calendar.html', context={'evento': evento, 'form': form})
+        return render(request,'calendar.html')
     else:
-        return redirect('/calendario/')
+        return redirect('/createEventoPessoal/')
+
+class AgendaPublicaForm(ModelForm):
+    class Meta():
+        model = AgendaPublica
+        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'dono', 'seguem', 'compromissoPessoal']
+
+def create_agendaPublica(request):
+    form = AgendaPublicaForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('agendaspublicas')
+    return render(request, 'agenda_publica_form.html', context={'form': form})
 
 
->>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
+class AgendaPrivadaForm(ModelForm):
+    class Meta():
+        model = AgendaPrivada
+        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'pessoa', 'compromissoPessoal']
+
+
+def create_agendaPrivada(request):
+    form = AgendaPrivadaForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('agendasprivadas')
+    return render(request, 'agenda_privada_form.html', context={'form': form})
+
+
+
