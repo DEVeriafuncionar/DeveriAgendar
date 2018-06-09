@@ -1,8 +1,12 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
+<<<<<<< HEAD
 from django.contrib import messages
 from .forms import *
+=======
+>>>>>>> 10e8b8cca0fd6564b446871a4712654693982654
 from .models import *
+from .forms import *
 
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
@@ -101,7 +105,9 @@ def create_compromissoPessoal(request):
     hr_fim = request.POST.get(' hourEndEvent ')
     foto = request.POST.get(' InputFile ')
 
-    evento = CompromissoPessoal()
+    evento = CompromissoPessoal.objects.all()
+    form = CompromissoPessoalForm(request.POST or None)
+
     if titulo:
         evento.titulo = titulo
 
@@ -128,7 +134,13 @@ def create_compromissoPessoal(request):
 
         evento.save()
 
+<<<<<<< HEAD
         return render(request,'calendar.html')
     else:
         return redirect('/createEventoPessoal/')
 
+=======
+        return render(request, 'calendar.html', context={'evento': evento,'form':form})
+    else:
+        return redirect('/calendario/')
+>>>>>>> 10e8b8cca0fd6564b446871a4712654693982654
