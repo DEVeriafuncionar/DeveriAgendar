@@ -48,7 +48,7 @@ class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)
     discricao = models.TextField(blank=True)
     local = models.CharField(max_length=100, null=True, blank=True)
-    dataInicio = models.DateField(null=True, verbose_name='Data de Inicio', blank=True)
+    dataInicio = models.DateField(null=True, verbose_name='Data de Inicio',)
     horaInicio = models.TimeField(null=True, verbose_name='Hora de Inicio', blank=True)
     dataFim = models.DateField(null=True, verbose_name='Data de Termino', blank=True)
     horaFim = models.TimeField(null=True, verbose_name='Hora de Termino', blank=True)

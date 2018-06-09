@@ -3,36 +3,6 @@ from django.shortcuts import render, redirect
 from .forms import *
 from .models import *
 
-
-# Create your views here.
-
-# Desse jeito sera os outros forms. Os de Criar usuario não será desse jeito por outros motivos que depois qualquer duvida explico.
-
-# class InstituicaoForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil',
-#               'endereco']
-#
-# class PessoaForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil']
-#
-# def Cadastrar_Instituicao(request):
-#     form = InstituicaoForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('instituicao_list')
-#     return render(request, 'instituicao_form.html',{'form':form})
-#
-# def Cadastrar_Pessoa(request):
-#     form = PessoaForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('pessoa_list')
-#     return render(request, 'pessoa_form.html',{'form':form})
-
 def lista_pessoa(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
