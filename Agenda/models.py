@@ -100,7 +100,7 @@ class Agenda(models.Model):
     foto_de_capa = models.ImageField(upload_to='capa', null=True, blank=True)
     nome = models.CharField(max_length=35, null=False)
     discricao = models.TextField(blank=True)
-    dataCriacao = datetime.datetime.now()
+
 
     def __str__(self):
         return self.nome

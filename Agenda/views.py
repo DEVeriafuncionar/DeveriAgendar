@@ -11,6 +11,44 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
+<<<<<<< HEAD
+=======
+# class InstituicaoForm(ModelForm):
+#     class Meta:
+#         model = Instituicao
+#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil',
+#               'endereco']
+#
+# class PessoaForm(ModelForm):
+#     class Meta:
+#         model = Instituicao
+#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil']
+#
+# def Cadastrar_Instituicao(request):
+#     form = InstituicaoForm(request.POST or None)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('instituicao_list')
+#     return render(request, 'instituicao_form.html',{'form':form})
+#
+# def Cadastrar_Pessoa(request):
+#     form = PessoaForm(request.POST or None)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('pessoa_list')
+#     return render(request, 'pessoa_form.html',{'form':form})
+
+def index(request):  #
+    return render(request, 'index.html')
+
+def login(request):  #
+    
+    return render(request, 'login.html')
+
+def cadastrar(request):  #
+    return render(request, 'cadastro.html')
+
+>>>>>>> 6ba8dabc4206edfb9727c981a98d2e22e714b45b
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
@@ -62,26 +100,6 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     return redirect('/contas')
 
-# def salvar_conta(request):  # Utilizando segunda forma utilizando Herança
-#
-#     login = request.POST.get('login')
-#     senha = request.POST.get('senha')
-#     if login and senha:
-#         user = User()
-#         user.username = login
-#         user.password = senha
-#         user.save()
-#         nome = request.POST.get('nome')
-#         email = request.POST.get('email')
-#         if nome and email:
-#             p=Pessoa()
-#             p.usuario = user
-#             p.nome = nome
-#             p.email = email
-#             p.save()
-#
-#     return redirect('/pessoa')
-#
 def show_calendar(request):
     evento = CompromissoPessoal.objects.all()
     return render(request, 'calendar.html', context={'evento': evento})
@@ -140,10 +158,10 @@ def create_compromissoPessoal(request):
     else:
         return redirect('/createEventoPessoal/')
 
-class AgendaPublicaForm(ModelForm):
-    class Meta():
-        model = AgendaPublica
-        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'dono', 'seguem', 'compromissoPessoal']
+# class AgendaPublicaForm(ModelForm):
+#     class Meta():
+#         model = AgendaPublica
+#         fields = ['foto_de_capa', 'nome', 'descricao', 'dono', 'seguem', 'compromissoPessoal']
 
 def create_agendaPublica(request):
     form = AgendaPublicaForm(request.POST or None)
@@ -151,12 +169,6 @@ def create_agendaPublica(request):
         form.save()
         return redirect('agendaspublicas')
     return render(request, 'agenda_publica_form.html', context={'form': form})
-
-
-class AgendaPrivadaForm(ModelForm):
-    class Meta():
-        model = AgendaPrivada
-        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'pessoa', 'compromissoPessoal']
 
 
 def create_agendaPrivada(request):

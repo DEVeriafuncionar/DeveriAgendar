@@ -31,7 +31,7 @@ urlpatterns = [
                   path('criarconta/', create_conta, name='create_conta'),
                   path('criarconta/salvar/', salvar_conta, name='salvar_conta'),
                   path('agendas/calendario/', show_calendar),
-                  path('createagendapublica', create_agendaPublica, nome='create_agendaPublica'),
+                  path('createagendapublica/', create_agendaPublica, name='create_agendaPublica'),
 
                   # path('usuario/(<string:username>)/agendas/publicas/', agendas_publicas, name='agendas_publicas'),
                   # path('usuario/(<string:username>)/agendas/privadas/', agendas_privadas, name='agendas_privadas'),
