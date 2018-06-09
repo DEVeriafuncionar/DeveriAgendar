@@ -147,6 +147,7 @@ def create_compromissoPessoal(request):
 
         evento.save()
 
-        return render(request, 'calendar.html')
+        return render(request,'calendar.html')
     else:
         return redirect('/createEventoPessoal/')
+
