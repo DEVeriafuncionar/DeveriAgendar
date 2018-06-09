@@ -32,9 +32,14 @@ from .models import *
 #         return redirect('pessoa_list')
 #     return render(request, 'pessoa_form.html',{'form':form})
 
-def lista_pessoa(request):  # metado de teste pego do SGE
-    lista_tipos = Usuario.objects.all()
-    return render(request, 'tipo.html', context={'tipos': lista_tipos})
+def index(request):  #
+    return render(request, 'index.html')
+
+def login(request):  #
+    return render(request, 'login.html')
+
+def cadastrar(request):  #
+    return render(request, 'cadastro.html')
 
 
 def create_pessoa(request):  # metado de teste pego do SGE

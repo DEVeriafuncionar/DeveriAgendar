@@ -22,8 +22,10 @@ from Agenda.views import *  # Cadastrar_Instituicao,Cadastrar_Pessoa
 
 # assim como as views esses path s�o para teste de cria��o pessoa.
 urlpatterns = [
+                  path('login/', login, name="login"),
+                  path('cadastro/', cadastrar, name="cadastrar"),
                   path('admin/', admin.site.urls),
-                  path('index/', lista_pessoa, name='index'),
+                  path('', index, name='index'),
                   path('pessoa/add', create_pessoa, name='create_pessoa'),
                   path('pessoa/salvar', salvar_pessoa, name='salvar_pessoa'),
                   # path('usuario/',lista_usuario,name='lista_usuario'),
