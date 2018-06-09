@@ -11,44 +11,6 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
-<<<<<<< HEAD
-# class InstituicaoForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil',
-#               'endereco']
-#
-# class PessoaForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil']
-#
-# def Cadastrar_Instituicao(request):
-#     form = InstituicaoForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('instituicao_list')
-#     return render(request, 'instituicao_form.html',{'form':form})
-#
-# def Cadastrar_Pessoa(request):
-#     form = PessoaForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('pessoa_list')
-#     return render(request, 'pessoa_form.html',{'form':form})
-
-def index(request):  #
-    return render(request, 'index.html')
-
-def login(request):  #
-    
-    return render(request, 'login.html')
-
-def cadastrar(request):  #
-    return render(request, 'cadastro.html')
-=======
-=======
->>>>>>> 55d0b819e5d4220955cf1839d009e9535adab752
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
@@ -203,6 +165,3 @@ def create_agendaPrivada(request):
         form.save()
         return redirect('agendasprivadas')
     return render(request, 'agenda_privada_form.html', context={'form': form})
-
-
-
