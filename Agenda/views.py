@@ -1,14 +1,15 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
-
+from django.contrib import messages
 from .forms import *
 from .models import *
 
-def lista_pessoa(request):  # metado de teste pego do SGE
+def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
 
 
-def create_pessoa(request):  # metado de teste pego do SGE
+def create_conta(request):  # metado de teste pego do SGE
     return render(request, 'pessoa_form.html', context=None)
 
 
@@ -16,34 +17,44 @@ def create_pessoa(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
-def salvar_pessoa(request):  # primeira forma utilizando chave estrangeira
+def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
+    senha2 = request.POST.get('senha2')
     if login and senha:
-        user = User()
-        user.username = login
-        user.password = senha
-        user.save()  # aqui voce cria o usuario
+        if senha == senha2:
+            user = User()
+            user.username = login
+            user.password = senha
+            user.save()  # aqui voce cria o usuario
 
-        usuario2 = Usuario()  # Aqui voce instancia a class usuario
-        usuario2.usuario = user  # class Usuario recebe a class User do django
-        usuario2.save()  # salva a class Usuario
-        nome = request.POST.get('nome')
-        email = request.POST.get('email')
+            usuario2 = Usuario()  # Aqui voce instancia a class usuario
+            usuario2.usuario = user  # class Usuario recebe a class User do django
+            usuario2.save()  # salva a class Usuario
+
+            nome = request.POST.get('nome')
+            email = request.POST.get('email')
+            email2 = request.POST.get('email')
+        else:
+            messages.info(request,'Senha estão invalidas')
+            return HttpResponseRedirect('/criaconta')
 
         if nome and email:
-            p = Pessoa()  # Inicia a class Pessoa
-            usuario2.nome = nome  # Como atributo de nome estão na class Usuario quem recebe os atributos de nome e email e ela quem recebe
-            usuario2.email = email
-            usuario2.save()  # aqui voce cria a class
-            p.pessoa = usuario2
-            p.save()
+            if email == email2:
+                p = Pessoa()  # Inicia a class Pessoa
+                usuario2.nome = nome  # Como atributo de nome estão na class Usuario quem recebe os atributos de nome e email e ela quem recebe
+                usuario2.email = email
+                usuario2.save()  # aqui voce cria a class
+                p.pessoa = usuario2
+                p.save()
+            else:
+                messages.info(request, 'Email errados')
+                return HttpResponseRedirect('/criarconta')
 
-    return redirect('/pessoa')
+    return redirect('/contas')
 
-
-# def salvar_pessoa(request):  # Utilizando segunda forma utilizando Herança
+# def salvar_conta(request):  # Utilizando segunda forma utilizando Herança
 #
 #     login = request.POST.get('login')
 #     senha = request.POST.get('senha')

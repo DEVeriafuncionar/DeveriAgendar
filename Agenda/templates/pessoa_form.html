@@ -7,7 +7,7 @@
 
 {% block conteudo %}
 
-    <form action='/pessoa/salvar' method="post">
+    <form action='/criarConta/salvar' method="post">
         {% csrf_token %}
         <div class="form_description">
             <h2>Untitled Form</h2>
@@ -29,6 +29,13 @@
                            value=""/>
                 </div>
             </li>
+              <li id="li_2">
+                <label class="description" for="senha2">Confirmar sua Senha </label>
+                <div>
+                    <input type="password" id="senha2" name="senha2" class="element text medium" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
             <li id="li_3">
                 <label class="description" for="nome">Nome </label>
                 <div>
@@ -40,6 +47,13 @@
                 <label class="description" for="email">Email </label>
                 <div>
                     <input id="email" name="email" class="element text medium" type="email" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_4">
+                <label class="description" for="email2">Confirme seu Email </label>
+                <div>
+                    <input id="email" name="email2" class="element text medium" type="email" maxlength="255"
                            value=""/>
                 </div>
             </li>
