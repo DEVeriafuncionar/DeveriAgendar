@@ -62,26 +62,6 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     return redirect('/contas')
 
-# def salvar_conta(request):  # Utilizando segunda forma utilizando Herança
-#
-#     login = request.POST.get('login')
-#     senha = request.POST.get('senha')
-#     if login and senha:
-#         user = User()
-#         user.username = login
-#         user.password = senha
-#         user.save()
-#         nome = request.POST.get('nome')
-#         email = request.POST.get('email')
-#         if nome and email:
-#             p=Pessoa()
-#             p.usuario = user
-#             p.nome = nome
-#             p.email = email
-#             p.save()
-#
-#     return redirect('/pessoa')
-#
 def show_calendar(request):
     evento = CompromissoPessoal.objects.all()
     return render(request, 'calendar.html', context={'evento': evento})
