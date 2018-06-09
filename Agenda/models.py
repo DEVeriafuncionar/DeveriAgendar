@@ -30,14 +30,7 @@ class Instituicao(models.Model): # Primeira forma de fazer, utilizando FK
     def __str__(self):
         return self.instituicao.nome
 
-# class Instituicao(Usuario): #Segunda forma de fazer utilizando Herança
-#     endereco = models.CharField(max_length=255, null=True, blank=True)
-#
-#     class Meta:
-#         verbose_name_plural = "Instituições"
-#
-#     def __str__(self):
-#         return self.nome
+
 
 class Pessoa(models.Model): #Primeira forma de fazer Utilizando FK
     pessoa = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='pessoa')
@@ -49,14 +42,7 @@ class Pessoa(models.Model): #Primeira forma de fazer Utilizando FK
     def __str__(self):
         return self.pessoa.nome
 
-# class Pessoa(Usuario): #Primeira forma de fazer utilizando herança
-#     dataNascimento = models.DateField(null=True, verbose_name='Data de Nascimento', blank=True)
-#
-#     class Meta:
-#         verbose_name_plural = "Pessoas"
-#
-#     def __str__(self):
-#         return self.nome
+
 
 class Compromisso(models.Model):
     titulo = models.CharField(max_length=60, null=False)
