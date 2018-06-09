@@ -11,30 +11,6 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
-# class InstituicaoForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil',
-#               'endereco']
-#
-# class PessoaForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil']
-#
-# def Cadastrar_Instituicao(request):
-#     form = InstituicaoForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('instituicao_list')
-#     return render(request, 'instituicao_form.html',{'form':form})
-#
-# def Cadastrar_Pessoa(request):
-#     form = PessoaForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('pessoa_list')
-#     return render(request, 'pessoa_form.html',{'form':form})
 
 def index(request):  #
     return render(request, 'index.html')
@@ -59,7 +35,6 @@ def create_conta(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
-
 def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
@@ -155,10 +130,6 @@ def create_compromissoPessoal(request):
     else:
         return redirect('/createEventoPessoal/')
 
-# class AgendaPublicaForm(ModelForm):
-#     class Meta():
-#         model = AgendaPublica
-#         fields = ['foto_de_capa', 'nome', 'descricao', 'dono', 'seguem', 'compromissoPessoal']
 
 def create_agendaPublica(request):
     form = AgendaPublicaForm(request.POST or None)
