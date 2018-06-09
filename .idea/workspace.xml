@@ -7,6 +7,7 @@
     </list>
     <list id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-BS4-1.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-BS4.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-1.css" beforeDir="false" />
@@ -42,6 +43,11 @@
       <change beforePath="$PROJECT_DIR$/Agenda/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/cadastro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Agenda/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/login.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/tipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/tipo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/urls.py" beforeDir="false" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       <change beforePath="$PROJECT_DIR$/Agenda/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeveriaAgendar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeveriaAgendar/urls.py" afterDir="false" />
     </list>
@@ -61,6 +67,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="cadastro.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Agenda/templates/cadastro.html">
@@ -90,6 +97,84 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.77412933">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#44#0" expanded="true" />
+                    <element signature="e#2624#2700#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#638#670#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tipo.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Agenda/forms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="850">
+                  <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="pessoa_form.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-629">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -109,6 +194,7 @@
         <option value="$PROJECT_DIR$/Agenda/templates/instituicao_form.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/base.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/tipo_add.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" />
         <option value="$PROJECT_DIR$/Agenda/admin.py" />
@@ -121,6 +207,17 @@
         <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
         <option value="$PROJECT_DIR$/Agenda/views.py" />
         <option value="$PROJECT_DIR$/Agenda/templates/cadastro.html" />
+=======
+        <option value="$PROJECT_DIR$/Agenda/admin.py" />
+        <option value="$PROJECT_DIR$/requiriments.txt" />
+        <option value="$PROJECT_DIR$/views.py" />
+        <option value="$PROJECT_DIR$/Agenda/models.py" />
+        <option value="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" />
+        <option value="$PROJECT_DIR$/Agenda/urls.py" />
+        <option value="$PROJECT_DIR$/Agenda/views.py" />
+        <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
+        <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       </list>
     </option>
   </component>
@@ -177,12 +274,21 @@
               <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
               <item name="Agenda" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
               <item name="DeveriaAgendar" type="462c0819:PsiDirectoryNode" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
+            </path>
+            <path>
+              <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,20 +299,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Cursos/Django/CRUDValidacaoPesquisaProject" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda" />
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
     </key>
+<<<<<<< HEAD
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\oarrt\Documents\Faculdade\ProjetoLPC\DeveriAgendar\Media" />
       <recent name="C:\Users\oarrt\Documents\Faculdade\ProjetoLPC\DeveriAgendar\Agenda\static" />
+=======
+    <key name="CopyFile.RECENT_KEYS">
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
-      <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,6 +405,7 @@
       <option name="project" value="LOCAL" />
       <updated>1526502750633</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00006" summary="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira">
       <created>1528160089896</created>
       <option name="number" value="00006" />
@@ -331,11 +446,81 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23645681" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" />
+=======
+    <task id="LOCAL-00006" summary="Veiws utilizando chave estranjeira e a forma mais correta de utilizar.">
+      <created>1526505026823</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526505026823</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Veiws utilizando chave estranjeira e a forma mais correta de utilizar.">
+      <created>1528152301759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528152301759</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Veiws utilizando chave estranjeira e a forma mais correta de utilizar.">
+      <created>1528410246593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528410246593</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt">
+      <created>1528553103148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1528553103148</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt">
+      <created>1528558060197</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1528558060197</updated>
+    </task>
+    <task id="LOCAL-00011" summary="urls Atualizadas !!!!!1">
+      <created>1528558359398</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528558359398</updated>
+    </task>
+    <task id="LOCAL-00012" summary="..">
+      <created>1528563412305</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1528563412305</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50226927" side_tool="true" weight="0.25247526" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.4977307" visible="true" weight="0.25247526" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2397882" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39768976" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -345,6 +530,41 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.26158446" />
     </layout>
+=======
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22239032" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49848714" visible="true" weight="0.25247526" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39905363" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.28217822" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+    </layout-to-restore>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -362,6 +582,7 @@
     <MESSAGE value="Models Corrigidos e alterados" />
     <MESSAGE value="View teste 1 funcionando" />
     <MESSAGE value="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira" />
+<<<<<<< HEAD
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -379,10 +600,116 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+=======
+    <MESSAGE value="Veiws utilizando chave estranjeira e a forma mais correta de utilizar." />
+    <MESSAGE value="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt" />
+    <MESSAGE value="urls Atualizadas !!!!!1" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Agenda/migrations/0006_auto_20180512_2002.py" />
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/instituicao_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="56" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py" />
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <entry file="file://$PROJECT_DIR$/Agenda/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -411,6 +738,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -425,6 +758,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -460,6 +799,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -477,11 +822,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html" />
     <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-start-column="24" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="56" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="56" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -493,6 +845,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -500,6 +853,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -507,6 +862,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Agenda/templates/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2890">
@@ -550,6 +906,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+=======
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2278">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requiriments.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="113" column="66" selection-start-line="113" selection-start-column="66" selection-end-line="113" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -558,6 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
@@ -630,11 +1038,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+=======
+        <state relative-caret-position="-629">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/linecache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="25" column="58" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="25" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="272">
           <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
         </state>
@@ -644,6 +1102,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+=======
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#2624#2700#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>

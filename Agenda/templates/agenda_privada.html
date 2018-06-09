@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Lista de Agendas Privadas
+{% endblock title %}
+
+{% block conteudo %}
+    <h1>Lista de Agendas Privadas</h1>
+        <ul>
+            {% for i in agenda_privada  %}
+                <li>{{i.nome}}</li>
+            {% endfor %}
+        </ul>
+{% endblock  %}

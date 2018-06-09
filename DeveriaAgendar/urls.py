@@ -25,12 +25,31 @@ urlpatterns = [
                   path('login/', login, name="login"),
                   path('cadastro/', cadastrar, name="cadastrar"),
                   path('admin/', admin.site.urls),
+<<<<<<< HEAD
                   path('', index, name='index'),
                   path('pessoa/add', create_pessoa, name='create_pessoa'),
                   path('pessoa/salvar', salvar_pessoa, name='salvar_pessoa'),
                   # path('usuario/',lista_usuario,name='lista_usuario'),
                   # path('instituicao/', Cadastrar_Instituicao, name='Cadastrar_Instituicao'),
                   # path('pessoa/', Cadastrar_Pessoa, name='Cadastrar_Pessoa'),
+=======
+
+                  path('agendas/calendario/', show_calendar),
+                  path('contas/', lista_contas, name='home_tipos'),
+                  path('criarconta/', create_conta, name='create_conta'),
+                  path('criarconta/salvar/', salvar_conta, name='salvar_conta'),
+
+                  # path('usuario/(<string:username>)/agendas/publicas/', agendas_publicas, name='agendas_publicas'),
+                  # path('usuario/(<string:username>)/agendas/privadas/', agendas_privadas, name='agendas_privadas'),
+                  # path('usuario/(<string:username>)/agendas/institucionais/', agendas_privadas,  name='agendas_privadas'),
+                  #
+                  # path('usuario/(<string:username>)/agendas/publicas/(<int:pk>)/calender', agendas_publicas, name='agendas_publicas'),
+                  # path('usuario/(<string:username>)/agendas/privadas/(<int:pk>)/calender', agendas_privadas, name='agendas_privadas'),
+                  # path('usuario/(<string:username>)/agendas/institucionais/(<int:pk>)/calendar', agendas_privadas, name='agendas_privadas'),
+                  # path('usuario/(<string:username>)/agendas/institucionais/<int:pk>/calendar', agendas_privadas, name='agendas_privadas'),
+
+                  path('createEventoPessoal', create_compromissoPessoal)
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Essa rota Static e a rota das imagens

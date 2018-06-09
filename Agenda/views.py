@@ -1,7 +1,11 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
-
+from django.contrib import messages
+from .forms import *
 from .models import *
+from .forms import *
 
+<<<<<<< HEAD
 
 # Create your views here.
 
@@ -40,9 +44,14 @@ def login(request):  #
 
 def cadastrar(request):  #
     return render(request, 'cadastro.html')
+=======
+def lista_contas(request):  # metado de teste pego do SGE
+    lista_tipos = Usuario.objects.all()
+    return render(request, 'tipo.html', context={'tipos': lista_tipos})
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
 
 
-def create_pessoa(request):  # metado de teste pego do SGE
+def create_conta(request):  # metado de teste pego do SGE
     return render(request, 'pessoa_form.html', context=None)
 
 
@@ -50,30 +59,131 @@ def create_pessoa(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
+<<<<<<< HEAD
 def salvar_pessoa(request):
 #primeira forma utilizando chave estrangeira
+=======
+def salvar_conta(request):  # primeira forma utilizando chave estrangeira
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
 
     login = request.POST.get('login')
     senha = request.POST.get('senha')
+    senha2 = request.POST.get('senha2')
     if login and senha:
-        user = User()
-        user.username = login
-        user.password = senha
-        user.save() # aqui voce cria o usuario
+        if senha == senha2:
+            user = User()
+            user.username = login
+            user.password = senha
+            user.save()  # aqui voce cria o usuario
 
-        usuario2 = Usuario() #Aqui voce instancia a class usuario
-        usuario2.usuario = user # class Usuario recebe a class User do django
-        usuario2.save() # salva a class Usuario
-        nome = request.POST.get('nome')
-        email = request.POST.get('email')
+            usuario2 = Usuario()  # Aqui voce instancia a class usuario
+            usuario2.usuario = user  # class Usuario recebe a class User do django
+            usuario2.save()  # salva a class Usuario
+
+            nome = request.POST.get('nome')
+            email = request.POST.get('email')
+            email2 = request.POST.get('email')
+        else:
+            messages.info(request,'Senha estão invalidas')
+            return HttpResponseRedirect('/criaconta')
 
         if nome and email:
-            p = Pessoa() # Inicia a class Pessoa
-            usuario2.nome = nome #Como atributo de nome estão na class Usuario quem recebe os atributos de nome e email e ela quem recebe
-            usuario2.email = email
-            usuario2.save() # aqui voce cria a class
-            p.pessoa = usuario2
-            p.save()
+            if email == email2:
+                p = Pessoa()  # Inicia a class Pessoa
+                usuario2.nome = nome  # Como atributo de nome estão na class Usuario quem recebe os atributos de nome e email e ela quem recebe
+                usuario2.email = email
+                usuario2.save()  # aqui voce cria a class
+                p.pessoa = usuario2
+                p.save()
+            else:
+                messages.info(request, 'Email errados')
+                return HttpResponseRedirect('/criarconta')
 
+<<<<<<< HEAD
     return redirect('/index/')
 
+=======
+    return redirect('/contas')
+
+# def salvar_conta(request):  # Utilizando segunda forma utilizando Herança
+#
+#     login = request.POST.get('login')
+#     senha = request.POST.get('senha')
+#     if login and senha:
+#         user = User()
+#         user.username = login
+#         user.password = senha
+#         user.save()
+#         nome = request.POST.get('nome')
+#         email = request.POST.get('email')
+#         if nome and email:
+#             p=Pessoa()
+#             p.usuario = user
+#             p.nome = nome
+#             p.email = email
+#             p.save()
+#
+#     return redirect('/pessoa')
+#
+def show_calendar(request):
+    evento = CompromissoPessoal.objects.all()
+    return render(request, 'calendar.html', context={'evento': evento})
+
+
+def agendas_publicas(request):
+    lista_agendas = AgendaPublica.objects.all()
+    return render(request, 'agenda_publica.html', context={'nome': lista_agendas})
+
+
+# @login_required
+def agendas_privadas(request):
+    agendas = AgendaPrivada.objects.all()
+
+    return render(request, 'agenda_privada.html', context={'agenda_privada': agendas})
+
+
+def create_compromissoPessoal(request):
+    titulo = request.POST.get(' tituloEvent ')
+    descricao = request.POST.get(' descricaoEvent ')
+    local = request.POST.get(' localEvent ')
+    dt_inicio = request.POST.get(' dtBeginEvent ')
+    hr_inicio = request.POST.get(' hourBeginEvent ')
+    dt_fim = request.POST.get(' dtEndEvent ')
+    hr_fim = request.POST.get(' hourEndEvent ')
+    foto = request.POST.get(' InputFile ')
+
+    evento = CompromissoPessoal.objects.all()
+    form = CompromissoPessoalForm(request.POST or None)
+
+    if titulo:
+        evento.titulo = titulo
+
+        if descricao:
+            evento.discricao = descricao
+
+        if local:
+            evento.local = local
+
+        if dt_inicio:
+            evento.dataInicio = dt_inicio
+
+        if hr_inicio:
+            evento.horaInicio = hr_inicio
+
+        if dt_fim:
+            evento.dataFim = dt_fim
+
+        if hr_fim:
+            evento.horaFim = hr_fim
+
+        if foto:
+            evento.foto = foto
+
+        evento.save()
+
+        return render(request, 'calendar.html', context={'evento': evento, 'form': form})
+    else:
+        return redirect('/calendario/')
+
+
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5

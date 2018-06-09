@@ -53,15 +53,10 @@
                             <div class="card-body">
                                 <!-- the events -->
                                 <div id="external-events">
-                                    {% for evento in eventos %}
+                                    {% for evento in evento %}
                                         <div class="external-event bg-success">{{ evento.titulo }}</div>
                                     {% endfor %}
-                                    <div class="checkbox">
-                                        <label for="drop-remove" id ="drop-remove">
-                                            {#                      <input type="checkbox" id="drop-remove">#}
-                                            {#                      remove after drop#}
-                                        </label>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /.card-body -->
@@ -89,17 +84,57 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form action="/createevent/" method="POST">
-                                                        <label>Titulo</label>
-                                                        <input type="text" placeholder="Titulo"/><br>
-                                                        <label>Descrição</label>
-                                                        <input type="text" placeholder="~Descrição"/>
-
+                                                    <form role="form" action="/criarevento/" method="POST">
+                                                        {% csrf_token %}
+                                                        <div class="card-body">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Titulo:</label>
+                                                                <input type="text" class="form-control" name="tituloEvent" placeholder="Titulo:">
+                                                                <small id="emailHelp" class="form-text text-muted">Campo Obrigatório.</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputPassword1">Descrição</label>
+                                                                <textarea  rows="3" class="form-control" name="descricaoEvent"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <strong><label class="form-check-label" for="exampleCheck1">Local:</label></strong>
+                                                                <input type="text" class="form-control" name="localEvent">
+                                                            </div>
+                                                             <div class="form-group">
+                                                                 <strong><label class="form-check-label" for="exampleCheck1">Data inicio:</label></strong>
+                                                                <input type="date" class="form-control" name="dtBeginEvent">
+                                                            </div>
+                                                             <div class="form-group">
+                                                                 <strong><label class="form-check-label" for="exampleCheck1">Hora inicio:</label></strong>
+                                                                <input type="time" class="form-control" name="hourBeginEvent">
+                                                            </div>
+                                                             <div class="form-group">
+                                                                 <strong><label class="form-check-label" for="exampleCheck1">Data fim:</label></strong>
+                                                                <input type="date" class="form-control" name="dtEndEvent">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <strong><label class="form-check-label" for="exampleCheck1">Hora fim:</label></strong>
+                                                                <input type="time" class="form-control" name="hourEndEvent">
+                                                            </div>
+                                                            <div class = "form-group">
+                                                                <strong><label>Tipo de compromisso:</label></strong>
+                                                             <select class="form-control">
+                                                                {% for cbxpessoal in form  %}
+                                                                    <option>{{ cbxpessoal. }}</option>
+                                                                {% endfor %}
+                                                              </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlFile1">Foto:</label>
+                                                                <input type="file" class="form-control-file" id="exampleFormControlFile1" name="InputFile">
+                                                            </div>
+                                                        </div>
+                                                          <div class="modal-footer">
+                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                              <button type="submit" class="btn btn-primary" role="button">Salvar</button>
+                                                          </div>
                                                     </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                    <button type="button" class="btn btn-primary">Salvar</button>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -107,9 +142,9 @@
                                 </div>
                                 <!-- /btn-group -->
 
-                                    <!-- /btn-group -->
-                                </div>
-                                <!-- /input-group -->
+                                <!-- /btn-group -->
+                            </div>
+                            <!-- /input-group -->
 
                         </div>
                     </div>
@@ -165,7 +200,8 @@
 <script src="../dist/js/demo.js"></script>
 <!-- fullCalendar 2.2.5 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-<script src="{% static 'plugins/fullcalendar/fullcalendar.min.js'%}"></script>
+<script src="{% static 'plugins/fullcalendar3.9/fullcalendar.js'%}"></script>
+<script src="{% static 'plugins/fullcalendar3.9/locale/pt-br.js' %}"></script>
 <!-- Page specific script -->
 <script>
     $(function () {
@@ -211,14 +247,13 @@
                 right : 'month,agendaWeek,agendaDay'
             },
             buttonText: {
-                today: 'today',
-                month: 'month',
-                week : 'week',
-                day  : 'day'
-            },
-            //Random default events
-            events    : [
+                today: 'hoje',
+                month: 'mês',
+                week : 'semana',
+                day  : 'dia'
+            }, //Random default events
 
+            events: [
             ],
             editable  : true,
             droppable : true, // this allows things to be dropped onto the calendar !!!
