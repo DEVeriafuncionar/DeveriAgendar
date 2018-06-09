@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="">
+    <list default="true" id="9725025f-2dec-42e1-87ca-0bf41e45e04d" name="a" comment=".">
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/cadastro.html" afterDir="false" />
+    </list>
+    <list id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-BS4-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-BS4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-10.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Calendar-JavaScript-Can-only-see-in-browser-preview-mode.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode-9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/static/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/login.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/templates/tipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/templates/tipo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda/urls.py" beforeDir="false" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
+>>>>>>> a86728c94c2215af6fe2dc3b38185bf16ae53c8a
       <change beforePath="$PROJECT_DIR$/Agenda/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeveriaAgendar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeveriaAgendar/urls.py" afterDir="false" />
     </list>
@@ -22,6 +70,37 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf>
+      <file leaf-file-name="cadastro.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Agenda/templates/cadastro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agenda/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+=======
     <splitter split-orientation="horizontal" split-proportion="0.77412933">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -99,10 +178,12 @@
         </leaf>
       </split-second>
     </splitter>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Pessoa</find>
+      <find>create_agenda</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,9 +196,22 @@
         <option value="$PROJECT_DIR$/DeveriAgendar/settings.py" />
         <option value="$PROJECT_DIR$/DeveriaAgendar/settings.py" />
         <option value="$PROJECT_DIR$/Agenda/templates/instituicao_form.html" />
-        <option value="$PROJECT_DIR$/Agenda/templates/index.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/base.html" />
         <option value="$PROJECT_DIR$/Agenda/templates/tipo_add.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
+        <option value="$PROJECT_DIR$/Agenda/templates/pessoa_form.html" />
+        <option value="$PROJECT_DIR$/Agenda/admin.py" />
+        <option value="$PROJECT_DIR$/Agenda/models.py" />
+        <option value="$PROJECT_DIR$/Agenda/static/css/index.css" />
+        <option value="$PROJECT_DIR$/Agenda/templates/index.html" />
+        <option value="$PROJECT_DIR$/Agenda/templates/login.html" />
+        <option value="$PROJECT_DIR$/Agenda/static/css/login.css" />
+        <option value="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css" />
+        <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
+        <option value="$PROJECT_DIR$/Agenda/views.py" />
+        <option value="$PROJECT_DIR$/Agenda/templates/cadastro.html" />
+=======
         <option value="$PROJECT_DIR$/Agenda/admin.py" />
         <option value="$PROJECT_DIR$/requiriments.txt" />
         <option value="$PROJECT_DIR$/views.py" />
@@ -127,6 +221,11 @@
         <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
         <option value="$PROJECT_DIR$/Agenda/views.py" />
         <option value="$PROJECT_DIR$/DeveriaAgendar/urls.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Agenda/templates/tipo.html" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
+>>>>>>> a86728c94c2215af6fe2dc3b38185bf16ae53c8a
       </list>
     </option>
   </component>
@@ -136,11 +235,30 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" />
+        <range start1="2" end1="3" start2="2" end2="3" changelist="9725025f-2dec-42e1-87ca-0bf41e45e04d" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Agenda/templates/cadastro.html">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="9725025f-2dec-42e1-87ca-0bf41e45e04d" />
+        <range start1="7" end1="9" start2="8" end2="9" changelist="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" />
+        <range start1="13" end1="41" start2="13" end2="28" changelist="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" />
+        <range start1="69" end1="88" start2="56" end2="60" changelist="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" />
+      </ranges>
+    </file>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -164,12 +282,16 @@
               <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
               <item name="Agenda" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeveriAgendar" type="462c0819:PsiDirectoryNode" />
               <item name="DeveriaAgendar" type="462c0819:PsiDirectoryNode" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
             </path>
             <path>
               <item name="DeveriAgendar" type="b2602c69:ProjectViewProjectNode" />
@@ -185,7 +307,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Cursos/Django/CRUDValidacaoPesquisaProject" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -195,7 +321,13 @@
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda" />
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
     </key>
+<<<<<<< HEAD
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oarrt\Documents\Faculdade\ProjetoLPC\DeveriAgendar\Media" />
+      <recent name="C:\Users\oarrt\Documents\Faculdade\ProjetoLPC\DeveriAgendar\Agenda\static" />
+=======
     <key name="CopyFile.RECENT_KEYS">
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       <recent name="C:\Ordis\Arquivos\Desenvolvimento\ULBRA\2018.1\LPC\DeveriAgendar\Agenda\templates" />
     </key>
   </component>
@@ -239,12 +371,12 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="ad44abe5-39a8-4b1f-bddc-8907bb9f00df" name="Default" comment="" />
       <created>1526141652263</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526141652263</updated>
+      <updated>1528569267700</updated>
     </task>
     <task id="LOCAL-00001" summary="Primeiro Commity : Models Criados e funcionandos. Admin Já está funcionando.">
       <created>1526166376783</created>
@@ -281,6 +413,48 @@
       <option name="project" value="LOCAL" />
       <updated>1526502750633</updated>
     </task>
+<<<<<<< HEAD
+    <task id="LOCAL-00006" summary="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira">
+      <created>1528160089896</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528160089896</updated>
+    </task>
+    <task active="true" id="LOCAL-00007" summary="a">
+      <changelist id="9725025f-2dec-42e1-87ca-0bf41e45e04d" name="a" comment="." />
+      <created>1528569267481</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528569267793</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".">
+      <created>1528569339023</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528569339023</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <option name="trackContextForNewChangelist" value="true" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50292826" side_tool="true" weight="0.2690583" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29968455" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49707174" visible="true" weight="0.2690583" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23645681" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="5" />
+=======
     <task id="LOCAL-00006" summary="Veiws utilizando chave estranjeira e a forma mais correta de utilizar.">
       <created>1526505026823</created>
       <option name="number" value="00006" />
@@ -362,11 +536,23 @@
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32838285" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39768976" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.26158446" />
+    </layout>
+=======
       <window_info anchor="right" id="Data View" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -400,6 +586,7 @@
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Python Console" order="2" />
     </layout-to-restore>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -417,6 +604,25 @@
     <MESSAGE value="Models Corrigidos e alterados" />
     <MESSAGE value="View teste 1 funcionando" />
     <MESSAGE value="View teste 2 funcionando existe nesse codigo duas views e duas class de de pessoa e instituição. Um das formas as class são heranças e a outra forma e por chave estrangeira" />
+<<<<<<< HEAD
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+=======
     <MESSAGE value="Veiws utilizando chave estranjeira e a forma mais correta de utilizar." />
     <MESSAGE value="Merge branch 'master' of https://github.com/DEVeriafuncionar/DeveriAgendar&#10;&#10;# Conflicts:&#10;#&#9;Agenda/__pycache__/admin.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/models.cpython-36.pyc&#10;#&#9;Agenda/__pycache__/views.cpython-36.pyc&#10;#&#9;Agenda/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;requiriments.txt" />
     <MESSAGE value="urls Atualizadas !!!!!1" />
@@ -518,13 +724,17 @@
         </state>
       </provider>
     </entry>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <entry file="file://$PROJECT_DIR$/Agenda/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
+<<<<<<< HEAD
+=======
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -553,9 +763,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+<<<<<<< HEAD
+=======
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -570,9 +783,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+<<<<<<< HEAD
+=======
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -608,9 +824,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
+<<<<<<< HEAD
+=======
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -628,10 +847,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html" />
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+=======
     <entry file="file://$PROJECT_DIR$/Agenda/templates/form/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="67" column="56" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="56" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
@@ -643,6 +870,16 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
     <entry file="file://$PROJECT_DIR$/Agenda/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -650,6 +887,51 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2890">
+          <caret line="170" column="19" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="538" selection-start-line="538" selection-end-line="538" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/calendar.css" />
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+=======
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -699,11 +981,89 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agenda/templates/pessoa_form.html">
+    <entry file="file://$PROJECT_DIR$/Media/imgIndex/pexels-photo-160107.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Footer-Basic.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Footer-Dark.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/ebs-bootstrap-datepicker-4.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/ebs-bootstrap-datepicker-3.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/ebs-bootstrap-datepicker-2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/ebs-bootstrap-datepicker-1.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/ebs-bootstrap-datepicker.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Dark-NavBar-2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Dark-NavBar-1.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Dark-NavBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Customizable-Background--Overlay.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/checkbox.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/JLX-Contact-Form-with-Placeholder-FI.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/static/css/Login-Form-Dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveriaAgendar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+=======
         <state relative-caret-position="-629">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
@@ -742,11 +1102,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="320" selection-start-line="320" selection-end-line="320" />
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/templates/tipo.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
@@ -756,6 +1118,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="272">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agenda/templates/cadastro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+=======
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+>>>>>>> a86728c94c2215af6fe2dc3b38185bf16ae53c8a
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -770,6 +1147,7 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#2249#2324#0" />
           </folding>
+>>>>>>> da2d853ce2a108a47e90a20e2b446d8782b931d5
         </state>
       </provider>
     </entry>
