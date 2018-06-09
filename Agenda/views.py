@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-
-from .forms import *
 from .models import *
+from .forms import *
 
 
 # Create your views here.
@@ -120,7 +119,9 @@ def create_compromissoPessoal(request):
     hr_fim = request.POST.get(' hourEndEvent ')
     foto = request.POST.get(' InputFile ')
 
-    evento = CompromissoPessoal()
+    evento = CompromissoPessoal.objects.all()
+    form = CompromissoPessoalForm(request.POST or None)
+
     if titulo:
         evento.titulo = titulo
 
@@ -147,6 +148,6 @@ def create_compromissoPessoal(request):
 
         evento.save()
 
-        return render(request, 'calendar.html')
+        return render(request, 'calendar.html', context={'evento': evento,'form':form})
     else:
-        return redirect('/createEventoPessoal/')
+        return redirect('/calendario/')
