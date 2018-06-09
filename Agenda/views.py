@@ -5,6 +5,12 @@ from .forms import *
 from .models import *
 from .forms import *
 
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import *
+from .models import *
+
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
@@ -18,6 +24,7 @@ def create_conta(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
+
 def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
@@ -102,9 +109,7 @@ def create_compromissoPessoal(request):
     hr_fim = request.POST.get(' hourEndEvent ')
     foto = request.POST.get(' InputFile ')
 
-    evento = CompromissoPessoal.objects.all()
-    form = CompromissoPessoalForm(request.POST or None)
-
+    evento = CompromissoPessoal()
     if titulo:
         evento.titulo = titulo
 
@@ -131,10 +136,9 @@ def create_compromissoPessoal(request):
 
         evento.save()
 
-        return render(request, 'calendar.html', context={'evento': evento, 'form': form})
+        return render(request,'calendar.html')
     else:
-        return redirect('/calendario/')
-
+        return redirect('/createEventoPessoal/')
 
 class AgendaPublicaForm(ModelForm):
     class Meta():
@@ -161,5 +165,6 @@ def create_agendaPrivada(request):
         form.save()
         return redirect('agendasprivadas')
     return render(request, 'agenda_privada_form.html', context={'form': form})
+
 
 
