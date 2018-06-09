@@ -11,8 +11,7 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
-<<<<<<< HEAD
-=======
+
 # class InstituicaoForm(ModelForm):
 #     class Meta:
 #         model = Instituicao
@@ -48,7 +47,7 @@ def login(request):  #
 def cadastrar(request):  #
     return render(request, 'cadastro.html')
 
->>>>>>> 6ba8dabc4206edfb9727c981a98d2e22e714b45b
+
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
