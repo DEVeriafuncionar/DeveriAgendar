@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    Cadastrar Agenda Pública
+{% endblock title %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.foto_de_capa }}
+        {{ form.nome }}
+        {{ form.descricao }}
+        {{ form.dataCriacao }}
+        {{ form.dono }}
+        {{ form.seguem }}
+        {{ compromissoPessoal }}
+        
+        <button type="submit" class="btn btn-primary">
+            salvar
+        </button>
+    </form>
+
+
+{% endblock content %}

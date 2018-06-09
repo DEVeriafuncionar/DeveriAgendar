@@ -136,3 +136,30 @@ def create_compromissoPessoal(request):
         return redirect('/calendario/')
 
 
+class AgendaPublicaForm(ModelForm):
+    class Meta():
+        model = AgendaPublica
+        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'dono', 'seguem', 'compromissoPessoal']
+
+def create_agendaPublica(request):
+    form = AgendaPublicaForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('agendaspublicas')
+    return render(request, 'agenda_publica_form.html', context={'form': form})
+
+
+class AgendaPrivadaForm(ModelForm):
+    class Meta():
+        model = AgendaPrivada
+        fields = ['foto_de_capa', 'nome', 'descricao', 'dataCriacao', 'pessoa', 'compromissoPessoal']
+
+
+def create_agendaPrivada(request):
+    form = AgendaPrivadaForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('agendasprivadas')
+    return render(request, 'agenda_privada_form.html', context={'form': form})
+
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    Cadastrar Agenda Privada
+{% endblock title %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.foto_de_capa }}
+        {{ form.nome }}
+        {{ form.descricao }}
+        {{ form.dataCriacao }}
+        {{ from.pessoa }}
+        {{ from.compromissoPessoal }}
+        
+        <button type="submit" class="btn btn-primary">
+            salvar
+        </button>
+    </form>
+
+
+{% endblock content %}
