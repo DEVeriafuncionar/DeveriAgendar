@@ -3,14 +3,6 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import *
 from .models import *
-from .forms import *
-
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from .forms import *
-from .models import *
-
 
 def index(request):  #
     return render(request, 'index.html')
@@ -137,6 +129,15 @@ def create_agendaPublica(request):
         form.save()
         return redirect('agendaspublicas')
     return render(request, 'agenda_publica_form.html', context={'form': form})
+
+def update_agendaPublica(request, pk):
+    ag = AgendaPublica.objects.get(pk=pk)
+
+    form = AgendaPublicaForm(request.POST or None, instance=agendas_publicas)
+    if form.is_valid():
+        form.save()
+        return redirect('createagendapublica/')
+    return render(request, 'agenda_publica_form.html', {'object': ag, 'form': form})
 
 
 def create_agendaPrivada(request):
