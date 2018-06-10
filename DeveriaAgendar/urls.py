@@ -23,7 +23,7 @@ from Agenda.views import *  # Cadastrar_Instituicao,Cadastrar_Pessoa
 urlpatterns = [
                   # path('login/', login, name="login"),
                   # path('cadastro/', cadastrar, name="cadastrar"),
-                  # path('admin/', admin.site.urls),
+                  path('admin/', admin.site.urls),
                   path('', index, name='index'),
                   # path('agendas/calendario/', show_calendar),
 

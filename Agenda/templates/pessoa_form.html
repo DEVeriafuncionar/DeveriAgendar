@@ -1,17 +1,24 @@
 {#templete pego do SGE#}
 {#Formulario gerado em um site http://www.phpform.org #}
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% block title %}
     Cadastrar pessoa
 {% endblock title %}
 
 {% block conteudo %}
 
-    <form action='/criarConta/salvar' method="post">
+    <form action='/criarconta/salvar/' method="post">
         {% csrf_token %}
         <div class="form_description">
             <h2>Untitled Form</h2>
             <p>This is your form description. Click here to edit.</p>
+               {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </div>
         <ul>
 
@@ -29,13 +36,20 @@
                            value=""/>
                 </div>
             </li>
-              <li id="li_2">
+            <li id="li_2">
                 <label class="description" for="senha2">Confirmar sua Senha </label>
                 <div>
                     <input type="password" id="senha2" name="senha2" class="element text medium" maxlength="255"
                            value=""/>
                 </div>
             </li>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
             <li id="li_3">
                 <label class="description" for="nome">Nome </label>
                 <div>
@@ -57,6 +71,13 @@
                            value=""/>
                 </div>
             </li>
+        {% if messages2 %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+        {% endif %}
             <li id="li_5">
                 <label class="description" for="bio">Bio </label>
                 <div>

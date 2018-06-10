@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -47,8 +48,9 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
             email = request.POST.get('email')
             email2 = request.POST.get('email')
         else:
+            print("entrou else")
             messages.info(request,'Senha estão invalidas')
-            return HttpResponseRedirect('/criaconta')
+            return HttpResponseRedirect('/criarconta/')
 
         if nome and email:
             if email == email2:
@@ -60,15 +62,17 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
                 p.save()
             else:
                 messages.info(request, 'Email errados')
-                return HttpResponseRedirect('/criarconta')
 
-    return redirect('/contas')
+                return HttpResponseRedirect('/criarconta/')
 
+        return redirect('/contas')
+
+#@login_required
 def show_calendar(request):
     evento = CompromissoPessoal.objects.all()
     return render(request, 'calendar.html', context={'evento': evento})
 
-
+#@login_required
 def agendas_publicas(request):
     lista_agendas = AgendaPublica.objects.all()
     return render(request, 'agenda_publica.html', context={'nome': lista_agendas})
@@ -80,7 +84,7 @@ def agendas_privadas(request):
 
     return render(request, 'agenda_privada.html', context={'agenda_privada': agendas})
 
-
+#@login_required
 def create_compromissoPessoal(request):
     titulo = request.POST.get(' tituloEvent ')
     descricao = request.POST.get(' descricaoEvent ')
@@ -122,7 +126,7 @@ def create_compromissoPessoal(request):
     else:
         return redirect('/createEventoPessoal/')
 
-
+#@login_required
 def create_agendaPublica(request):
     form = AgendaPublicaForm(request.POST or None)
     if form.is_valid():
@@ -130,6 +134,7 @@ def create_agendaPublica(request):
         return redirect('agendaspublicas')
     return render(request, 'agenda_publica_form.html', context={'form': form})
 
+#@login_required
 def update_agendaPublica(request, pk):
     ag = AgendaPublica.objects.get(pk=pk)
 
@@ -139,7 +144,7 @@ def update_agendaPublica(request, pk):
         return redirect('createagendapublica/')
     return render(request, 'agenda_publica_form.html', {'object': ag, 'form': form})
 
-
+#@login_required
 def create_agendaPrivada(request):
     form = AgendaPrivadaForm(request.POST or None)
     if form.is_valid():
