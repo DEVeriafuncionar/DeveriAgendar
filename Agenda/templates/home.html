@@ -1,0 +1,25 @@
+{%  extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    {% block title %}Home{% endblock %}
+</head>
+<body>
+
+{% block conteudo %}
+    {% if user.is_authenticated %}
+    Seja bem viado {{  user.name }}!
+        <p><a href="{% url 'logout' %}">Sair</a> </p>
+    {%  else %}
+        <p>Você não está logado, seu bosta!</p>
+        <a href="{%  url 'login' %}">Login</a>
+    {%  endif %}
+{% endblock %}
+
+
+</body>
+
+</html>

@@ -1,3 +1,6 @@
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -5,12 +8,18 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
+
 def index(request):  #
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 def login(request):  #
     
     return render(request, 'login.html')
+
+class SignUp(generic.CreateView):
+    form_class = UserCreationForm #Aqui puxa um form padrão
+    success_url = reverse_lazy('login') #Redireciona para a pagina de login
+    template_name = 'cadastro.html'
 
 def cadastrar(request):  #
     return render(request, 'cadastro.html')
@@ -19,10 +28,8 @@ def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
     return render(request, 'tipo.html', context={'tipos': lista_tipos})
 
-
 def create_conta(request):  # metado de teste pego do SGE
     return render(request, 'pessoa_form.html', context=None)
-
 
 # esse metado cria o usuario apartir de um formulario completo, ele não está completo e está apresentando erro.
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
@@ -77,21 +84,13 @@ def agendas_publicas(request):
     lista_agendas = AgendaPublica.objects.all()
     return render(request, 'agenda_publica.html', context={'nome': lista_agendas})
 
-
 # @login_required
 def agendas_privadas(request):
     agendas = AgendaPrivada.objects.all()
 
     return render(request, 'agenda_privada.html', context={'agenda_privada': agendas})
 
-<<<<<<< HEAD
-def cria_agendas_publicas(request):
-    return render(request, 'cria_agenda_publica.html', context={'cria_agenda_publica'})
-
-
-=======
 #@login_required
->>>>>>> 4d4be1ed7c3f55cfb10bff2fcee434e479895868
 def create_compromissoPessoal(request):
     titulo = request.POST.get(' tituloEvent ')
     descricao = request.POST.get(' descricaoEvent ')
