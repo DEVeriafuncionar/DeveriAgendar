@@ -1,41 +1,9 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import *
 from .models import *
-from .forms import *
-
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from .forms import *
-from .models import *
-
-
-# class InstituicaoForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil',
-#               'endereco']
-#
-# class PessoaForm(ModelForm):
-#     class Meta:
-#         model = Instituicao
-#         fields = ['usuario', 'nome', 'email', 'bio', 'telefone', 'foto_de_Perfil']
-#
-# def Cadastrar_Instituicao(request):
-#     form = InstituicaoForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('instituicao_list')
-#     return render(request, 'instituicao_form.html',{'form':form})
-#
-# def Cadastrar_Pessoa(request):
-#     form = PessoaForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('pessoa_list')
-#     return render(request, 'pessoa_form.html',{'form':form})
 
 def index(request):  #
     return render(request, 'index.html')
@@ -46,7 +14,6 @@ def login(request):  #
 
 def cadastrar(request):  #
     return render(request, 'cadastro.html')
-
 
 def lista_contas(request):  # metado de teste pego do SGE
     lista_tipos = Usuario.objects.all()
@@ -61,7 +28,6 @@ def create_conta(request):  # metado de teste pego do SGE
 # a cricação do usuario em si está funcionando, o erro está na criação do "Perfil"
 # metados de teste pego do SGE.
 # @transaction.atomic
-
 def salvar_conta(request):  # primeira forma utilizando chave estrangeira
 
     login = request.POST.get('login')
@@ -82,8 +48,9 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
             email = request.POST.get('email')
             email2 = request.POST.get('email')
         else:
+            print("entrou else")
             messages.info(request,'Senha estão invalidas')
-            return HttpResponseRedirect('/criaconta')
+            return HttpResponseRedirect('/criarconta/')
 
         if nome and email:
             if email == email2:
@@ -95,15 +62,17 @@ def salvar_conta(request):  # primeira forma utilizando chave estrangeira
                 p.save()
             else:
                 messages.info(request, 'Email errados')
-                return HttpResponseRedirect('/criarconta')
 
-    return redirect('/contas')
+                return HttpResponseRedirect('/criarconta/')
 
+        return redirect('/contas')
+
+#@login_required
 def show_calendar(request):
     evento = CompromissoPessoal.objects.all()
     return render(request, 'calendar.html', context={'evento': evento})
 
-
+#@login_required
 def agendas_publicas(request):
     lista_agendas = AgendaPublica.objects.all()
     return render(request, 'agenda_publica.html', context={'nome': lista_agendas})
@@ -115,10 +84,14 @@ def agendas_privadas(request):
 
     return render(request, 'agenda_privada.html', context={'agenda_privada': agendas})
 
+<<<<<<< HEAD
 def cria_agendas_publicas(request):
     return render(request, 'cria_agenda_publica.html', context={'cria_agenda_publica'})
 
 
+=======
+#@login_required
+>>>>>>> 4d4be1ed7c3f55cfb10bff2fcee434e479895868
 def create_compromissoPessoal(request):
     titulo = request.POST.get(' tituloEvent ')
     descricao = request.POST.get(' descricaoEvent ')
@@ -160,11 +133,7 @@ def create_compromissoPessoal(request):
     else:
         return redirect('/createEventoPessoal/')
 
-# class AgendaPublicaForm(ModelForm):
-#     class Meta():
-#         model = AgendaPublica
-#         fields = ['foto_de_capa', 'nome', 'descricao', 'dono', 'seguem', 'compromissoPessoal']
-
+#@login_required
 def create_agendaPublica(request):
     form = AgendaPublicaForm(request.POST or None)
     if form.is_valid():
@@ -172,10 +141,23 @@ def create_agendaPublica(request):
         return redirect('agendaspublicas')
     return render(request, 'agenda_publica_form.html', context={'form': form})
 
+#@login_required
+def update_agendaPublica(request, pk):
+    ag = AgendaPublica.objects.get(pk=pk)
 
+    form = AgendaPublicaForm(request.POST or None, instance=agendas_publicas)
+    if form.is_valid():
+        form.save()
+        return redirect('createagendapublica/')
+    return render(request, 'agenda_publica_form.html', {'object': ag, 'form': form})
+
+#@login_required
 def create_agendaPrivada(request):
     form = AgendaPrivadaForm(request.POST or None)
     if form.is_valid():
         form.save()
         return redirect('agendasprivadas')
     return render(request, 'agenda_privada_form.html', context={'form': form})
+
+
+
