@@ -115,6 +115,9 @@ def agendas_privadas(request):
 
     return render(request, 'agenda_privada.html', context={'agenda_privada': agendas})
 
+def cria_agendas_publicas(request):
+    return render(request, 'cria_agenda_publica.html', context={'cria_agenda_publica'})
+
 
 def create_compromissoPessoal(request):
     titulo = request.POST.get(' tituloEvent ')

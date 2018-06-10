@@ -37,10 +37,11 @@ urlpatterns = [
                   # path('usuario/(<string:username>)/agendas/privadas/', agendas_privadas, name='agendas_privadas'),
                   # path('usuario/(<string:username>)/agendas/institucionais/', agendas_privadas,  name='agendas_privadas'),
 
-                  # path('usuario/(<string:username>)/agendas/publicas/(<int:pk>)/calender', agendas_publicas, name='agendas_publicas'),
-                  # path('usuario/(<string:username>)/agendas/privadas/(<int:pk>)/calender', agendas_privadas, name='agendas_privadas'),
-                  # path('usuario/(<string:username>)/agendas/institucionais/(<int:pk>)/calendar', agendas_privadas, name='agendas_privadas'),
-                  # path('usuario/(<string:username>)/agendas/institucionais/<int:pk>/calendar', agendas_privadas, name='agendas_privadas'),
+                  path('usuario/(<string:username>)/agendas/publicas/(<int:pk>)/calender', agendas_publicas, name='agendas_publicas'),
+                  path('usuario/(<string:username>)/agendas/privadas/(<int:pk>)/calender', agendas_privadas, name='agendas_privadas'),
+                  path('usuario/(<string:username>)/agendas/publicas/(<int:pk>)/calender', cria_agendas_publicas, name='cria_agendas_publicas'),
+                  path('usuario/(<string:username>)/agendas/privadas/(<int:pk>)/calender', cria-agendas_privadas, name='cria-agendas_privadas'),
+                  path('usuario/(<string:username>)/agendas/institucionais/(<int:pk>)/calendar', agendas_institucionais, name='agendas_institucionais'),
 
                   path('createEventoPessoal', create_compromissoPessoal),
 
