@@ -80,8 +80,9 @@ def show_calendar(request):
     return render(request, 'calendar.html', context={'evento': evento})
 
 #@login_required
-def agendas_publicas(request):
-    lista_agendas = AgendaPublica.objects.all()
+def agendas_publicas(request,username):
+    lista_agendas = AgendaPublica.objects.filter(AgendaPublica.dono == username)
+
     return render(request, 'agenda_publica.html', context={'nome': lista_agendas})
 
 # @login_required
@@ -99,9 +100,11 @@ def create_compromissoPessoal(request):
     hr_inicio = request.POST.get(' hourBeginEvent ')
     dt_fim = request.POST.get(' dtEndEvent ')
     hr_fim = request.POST.get(' hourEndEvent ')
+    compromisso = request.POST.get(' Compromisso ')
     foto = request.POST.get(' InputFile ')
 
     evento = CompromissoPessoal()
+
     if titulo:
         evento.titulo = titulo
 
@@ -123,12 +126,15 @@ def create_compromissoPessoal(request):
         if hr_fim:
             evento.horaFim = hr_fim
 
+        if compromisso:
+            evento.compromisso = compromisso
+
         if foto:
             evento.foto = foto
 
         evento.save()
 
-        return render(request,'calendar.html')
+        return render(request,'calendar.html',context=None)
     else:
         return redirect('/createEventoPessoal/')
 
@@ -157,6 +163,5 @@ def create_agendaPrivada(request):
         form.save()
         return redirect('agendasprivadas')
     return render(request, 'agenda_privada_form.html', context={'form': form})
-
 
 
