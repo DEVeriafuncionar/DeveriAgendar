@@ -31,7 +31,7 @@ urlpatterns = [
                   # path('cadastro/', cadastrar, name="cadastrar"),
 
                   path('', index, name='index'),
-                  # path('agendas/calendario/', show_calendar),
+                  path('agendas/calendario/', show_calendar),
 
                   path('criarconta/', create_conta, name='create_conta'),
                   path('criarconta/salvar/', salvar_conta, name='salvar_conta'),
@@ -39,8 +39,8 @@ urlpatterns = [
                   path('agendas/calendario/', show_calendar),
                   path('createagendapublica/', create_agendaPublica, name='create_agendaPublica'),
 
-                  # path('usuario/(<string:username>)/agendas/publicas/', agendas_publicas, name='agendas_publicas'),
-                  # path('usuario/(<string:username>)/agendas/privadas/', agendas_privadas, name='agendas_privadas'),
+                  path('usuario/<str:username>/agendas/publicas/', agendas_publicas, name='agendas_publicas'),
+                  path('usuario/<str:username>/agendas/privadas/', agendas_privadas, name='agendas_privadas'),
                   # path('usuario/(<string:username>)/agendas/institucionais/', agendas_privadas,  name='agendas_privadas'),
 
                   #path('usuario/(<string:username>)/agendas/publicas/(<int:pk>)/calender', agendas_publicas, name='agendas_publicas'),
@@ -51,7 +51,7 @@ urlpatterns = [
                   #path('usuario/(<string:username>)/agendas/privadas/(<int:pk>)/calender', update_agendaPrivada, name='cria-agendas_privadas'),
                   #path('usuario/(<string:username>)/agendas/institucionais/(<int:pk>)/calendar', agendas_institucionais, name='agendas_institucionais'),
 
-                  path('createEventoPessoal', create_compromissoPessoal),
+                  path('createEventoPessoal/', create_compromissoPessoal),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
