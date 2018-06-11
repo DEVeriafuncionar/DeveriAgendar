@@ -1,10 +1,10 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Calendar</title>
+    <title>Agenda | Calendario</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -30,12 +30,6 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1>Calendar</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Calendar</li>
-                        </ol>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -84,7 +78,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form role="form" action="/criarevento/" method="POST">
+                                                    <form role="form" action="/createEventoPessoal/" method="POST">
                                                         {% csrf_token %}
                                                         <div class="card-body">
                                                             <div class="form-group">
@@ -103,13 +97,14 @@
                                                              <div class="form-group">
                                                                  <strong><label class="form-check-label" for="exampleCheck1">Data inicio:</label></strong>
                                                                 <input type="date" class="form-control" name="dtBeginEvent">
+                                                                  <small id="emailHelp" class="form-text text-muted">Campo Obrigatório.</small>
                                                             </div>
                                                              <div class="form-group">
                                                                  <strong><label class="form-check-label" for="exampleCheck1">Hora inicio:</label></strong>
                                                                 <input type="time" class="form-control" name="hourBeginEvent">
                                                             </div>
                                                              <div class="form-group">
-                                                                 <strong><label class="form-check-label" for="exampleCheck1">Data fim:</label></strong>
+                                                                 <strong><label class="form-check-label" for="exampleCheck1" >Data fim:</label></strong>
                                                                 <input type="date" class="form-control" name="dtEndEvent">
                                                             </div>
                                                             <div class="form-group">
@@ -118,10 +113,14 @@
                                                             </div>
                                                             <div class = "form-group">
                                                                 <strong><label>Tipo de compromisso:</label></strong>
-                                                             <select class="form-control">
-                                                                {% for cbxpessoal in form  %}
-                                                                    <option>{{ cbxpessoal. }}</option>
-                                                                {% endfor %}
+                                                             <select class="form-control" name="Compromisso" >
+                                                                 <option></option>
+                                                                    <option>Aniversario</option>
+                                                                    <option>Evento</option>
+                                                                    <option>Lembrete</option>
+                                                                    <option>Meta</option>
+                                                                    <option>Outro</option>
+
                                                               </select>
                                                             </div>
                                                             <div class="form-group">
@@ -168,13 +167,13 @@
     </div>
     <!-- /.content-wrapper -->
 
-    <footer class="main-footer">
-        <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.0.0-alpha
-        </div>
-        <strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-        reserved.
-    </footer>
+    <!--<footer class="main-footer">-->
+        <!--<div class="float-right d-none d-sm-block">-->
+            <!--<b>Version</b> 3.0.0-alpha-->
+        <!--</div>-->
+        <!--<strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights-->
+        <!--reserved.-->
+    <!--</footer>-->
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -200,8 +199,8 @@
 <script src="../dist/js/demo.js"></script>
 <!-- fullCalendar 2.2.5 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-<script src="{% static 'plugins/fullcalendar3.9/fullcalendar.js'%}"></script>
-<script src="{% static 'plugins/fullcalendar3.9/locale/pt-br.js' %}"></script>
+<script src="{% static 'plugins/fullcalendar-3.9.0/fullcalendar.js'%}"></script>
+<script src="{% static 'plugins/fullcalendar/locale/pt-br.js' %}"></script>
 <!-- Page specific script -->
 <script>
     $(function () {
@@ -254,6 +253,16 @@
             }, //Random default events
 
             events: [
+                {
+                {%for eventos in evento%}
+
+                title : '{{evetos.titulo}}',
+                start : '{{eventos.dataInicio}}'+'T'+'{{ eventos.horaInicio }}',
+                end : '{{eventos.dataFim}}'+'T'+'{{eventos.horaFim}}'
+
+                 {%endfor%}
+                }
+
             ],
             editable  : true,
             droppable : true, // this allows things to be dropped onto the calendar !!!
